@@ -9,8 +9,9 @@ int main()
 {
     vector<Undergrad> *undergrad_register = new vector<Undergrad>;
     vector<Postgrad> *postgrad_register = new vector<Postgrad>;
-    string option[3] = {"Undergraduate Registration", "Postgraduate Registration", "Quit"};
-    int option_size = 3;
+	int option_size = 4;
+    string option[option_size] = {"Undergraduate Registration", "Postgraduate Registration", "Admin", "Quit"};
+    
     bool sufficient_marks = true;
     bool is_registration_active = true;
     int input_number;
@@ -56,14 +57,50 @@ int main()
             }
 
         }
-        else if(input_number == 3)
+	else if(input_number == 3)
+        {
+            string username;
+            string password;
+            bool is_authenticated = false;
+            int admin_input;
+            int admin_option_size = 2;
+            string admin_options[admin_option_size] = {"Undergraduates Details", "Postgraduate Details"};
+            cout << "Admin Login" << endl;
+            while(!is_authenticated)
+            {
+                cout << "\nEnter UserName: ";
+                cin >> username;
+                cout << "Password: ";
+                cin >> password;
+                if(username == "admin" && password == "admin") {is_authenticated = true; }
+                else {continue; }
+            }
+            cout << "\nLogin Successful!" << endl;
+
+            admin_input = prompt(admin_options, admin_option_size);
+            if(admin_input == 1)
+            {
+                for (int i=0; i<undergrad_register->size(); i++)
+                {
+                    cout << undergrad_register->at(i).getfirstname() << "\t" << undergrad_register->at(i).getlastname() << "\t" << undergrad_register->at(i).getmarks() << "\t" << undergrad_register->at(i).getfaculty() << "\t" << undergrad_register->at(i).getdegree() << "\t" << endl;
+                }
+            }
+            else if(admin_input == 2)
+            {
+                for (int i=0; i<postgrad_register->size(); i++)
+                {
+                    cout << postgrad_register->at(i).getfirstname() << "\t" << postgrad_register->at(i).getlastname() << "\t" << postgrad_register->at(i).getmarks() << "\t" << postgrad_register->at(i).getfaculty() << "\t" << postgrad_register->at(i).getdegree() << "\t" << endl;
+                }
+            }
+        }
+        else if(input_number == 4)
         {
             std::cout << "The Program Has Been Successfully Terminated" << endl;
             is_registration_active = false;
-            delete undergrad_register;
-            delete postgrad_register;
         }
     }
+	delete undergrad_register;
+    delete postgrad_register;
     return 0;
 }
 
