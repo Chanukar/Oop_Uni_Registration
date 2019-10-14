@@ -10,6 +10,7 @@ registration:
 	g++ -std=c++11 -o out user.cpp undergrad.cpp postgrad.cpp main.cpp
 	./out
 	rm -rf out
+	clear
 
 faculty:
 	g++ test_faculty.cpp Degree.cpp Faculty.cpp -o out

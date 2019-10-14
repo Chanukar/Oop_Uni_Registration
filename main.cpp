@@ -23,10 +23,15 @@ int main()
         if (input_number == 1)
         {
             undergrad_register->push_back(Undergrad());
+            system("clear");
             undergrad_register->back().personal_detail_prompt();
+            system("clear");
             undergrad_register->back().facultyprompt();
+            system("clear");
             undergrad_register->back().undergradprompt();
+            system("clear");
             sufficient_marks = undergrad_register->back().sufficient_marks();
+            system("clear");
             if(!sufficient_marks)
             {
                 undergrad_register->pop_back();
