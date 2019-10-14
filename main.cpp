@@ -41,10 +41,15 @@ int main()
         else if(input_number ==2)
         {
             postgrad_register->push_back(Postgrad());
+            system("clear");
             postgrad_register->back().personal_detail_prompt();
+            system("clear");
             postgrad_register->back().facultyprompt();
+            system("clear");
             postgrad_register->back().undergradprompt();
+            system("clear");
             sufficient_marks = postgrad_register->back().sufficient_marks();
+            system("clear");
             if(!sufficient_marks)
             {
                 postgrad_register->pop_back();
