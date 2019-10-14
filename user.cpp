@@ -1,6 +1,6 @@
 #include "user.h"
 
-User::User()
+User::User():
     firstname("Default Initialised"),
     lastname("Default Initialised"),
     faculties_vector({"Faculty of Science", "Faculty of Arts", "Law School", "Faculty of the Professions", "Medical School"}),
