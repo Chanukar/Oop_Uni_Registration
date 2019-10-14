@@ -12,6 +12,7 @@ class Undergrad : public User {
         Undergrad();
         void personal_detail_prompt();
         bool sufficient_marks();
+        double getmarks();
 };
 
 #endif
