@@ -7,7 +7,6 @@ void Undergrad::personal_detail_prompt()
     string first_name, last_name;
     double ATAR_score;
     bool is_valid_ATAR = true;
-	
     std::cout << "Enter Your First Name: ";
     cin >> first_name;
     this->setfirstname(first_name);

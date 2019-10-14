@@ -54,7 +54,7 @@ int main()
             delete postgrad_register;
         }
     }
-    return 0; 
+    return 0;
 }
 
 int prompt(string array[], int& size)

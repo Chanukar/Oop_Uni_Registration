@@ -23,8 +23,8 @@ class User{
         vector<string> law_school_postgrads;
         vector<string> professions_faculty_postgrads;
         vector<string> medical_school_postgrads;
-        vector<vector<string>> undergrad_degrees;
-        vector<vector<string>> postgrad_degrees;
+        vector<vector<string> > undergrad_degrees;
+        vector<vector<string> > postgrad_degrees;
         string facultychoise;
         string degreechoise;
         int facultynum;

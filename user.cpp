@@ -1,6 +1,6 @@
 #include "user.h"
 
-User::User() :
+User::User()
     firstname("Default Initialised"),
     lastname("Default Initialised"),
     faculties_vector({"Faculty of Science", "Faculty of Arts", "Law School", "Faculty of the Professions", "Medical School"}),
@@ -18,7 +18,7 @@ User::User() :
     medical_school_postgrads({"Master of Health", "Master of Medicine", "Master of Vetenary", "Master of Oral Health"}),
     undergrad_degrees({science_faculty_undergrads, arts_faculty_undergrads, law_school_undergrads, professions_faculty_undergrads, medical_school_undergrads}),
     postgrad_degrees({science_faculty_postgrads, arts_faculty_postgrads, law_school_postgrads, professions_faculty_postgrads, medical_school_postgrads}),
-    facultychoise("None"), 
+    facultychoise("None"),
     degreechoise("None"),
     facultynum(0),
     degreenum(0)
@@ -109,7 +109,7 @@ void User::postgradprompt()
 
 void User::setfirstname(string& name)
 {
-    firstname = name; 
+    firstname = name;
 }
 
 void User::setlastname(string& name)
