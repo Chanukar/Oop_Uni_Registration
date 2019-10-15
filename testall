@@ -4,11 +4,39 @@ sleep 2
 echo ..
 echo Staring tests
 sleep 1
+
 echo Test 01: Student with good score applying for UG Bachlors of Computer Science
-./out < input01.txt | diff - output01.txt
+DIFF=$(./out < testcases/input01.txt | diff - testcases/output01.txt) 
+if [ "$DIFF" == "" ] 
+then
+    echo Test 01 Passed
+fi
+    ./out < testcases/input01.txt | diff - testcases/output01.txt
+
+
+
 echo Test 02: Student with bad score applying for PG in Medicine.
-./out < input02.txt | diff - output02.txt
+DIFF=$(./out < testcases/input02.txt | diff - testcases/output02.txt) 
+if [ "$DIFF" == "" ] 
+then
+    echo Test 02 Passed
+fi
+    ./out < testcases/input02.txt | diff - testcases/output02.txt
+
+
 echo Test 03: Admin login when 2 students applied, 1 eligible applied
-./out < input03.txt | diff - output03.txt
+DIFF=$(./out < testcases/input03.txt | diff - testcases/output03.txt) 
+if [ "$DIFF" == "" ] 
+then
+    echo Test 03 Passed
+fi
+    ./out < testcases/input03.txt | diff - testcases/output03.txt
+
+
 echo Test 04: Admin login when 2 eligible PG, and 1 eligible UG applied
-./out < input04.txt | diff - output04.txt
+DIFF=$(./out < testcases/input04.txt | diff - testcases/output04.txt) 
+if [ "$DIFF" == "" ] 
+then
+    echo Test 04 Passed
+fi
+    ./out < testcases/input04.txt | diff - testcases/output04.txt
