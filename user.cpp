@@ -41,6 +41,7 @@ void User::facultyprompt()
         cin >> input;
         if (input < 1 || input > i)
         {
+            system("clear");
             continue;
         }
         else
