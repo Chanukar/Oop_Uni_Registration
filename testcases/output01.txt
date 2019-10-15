@@ -1,0 +1,31 @@
+
+Welcome to The University Registration and Login System
+
+1.Undergraduate Registration
+2.Postgraduate Registration
+3.Admin
+4.Quit
+
+Select One of The Following Option: [H[2JEnter Your First Name: Enter Your Last Name: Enter Your The Valid ATAR Score: [H[2J
+1.Faculty of Science
+2.Faculty of Arts
+3.Law School
+4.Faculty of the Professions
+5.Medical School
+
+Select The Faculty That You Want To Enrol In: [H[2J
+1.Bachelor of Engineering
+2.Bachelor of Computer Science
+3.Bachelor of Science
+4.Bachelor of Architecture
+
+Select The Undergraduate Degree That You Want To Enrol In: [H[2JYou Are Eligible To Enrol In This Degree. Please Wait For The University Offer
+
+Welcome to The University Registration and Login System
+
+1.Undergraduate Registration
+2.Postgraduate Registration
+3.Admin
+4.Quit
+
+Select One of The Following Option: The Program Has Been Successfully Terminated

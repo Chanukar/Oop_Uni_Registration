@@ -1,6 +1,7 @@
 objects = user.o undergrad.o postgrad.o main.o
 registration: $(objects)
 	g++ -std=c++11 -o registration $(objects)
+	clear
 	./registration
 	make clean
 
@@ -13,8 +14,8 @@ undergrad.o: undergrad.cpp
 postgrad.o: postgrad.cpp
 	g++ -std=c++11 -c $< -o $@
 
-test:
-	g++ -std=c++11 -o out user.cpp undergrad.cpp postgrad.cpp main.cpp
+test: $(objects)
+	g++ -std=c++11 -o registration $(objects)
 	./out < testcases/input.txt | diff - testcases/realoutput.txt
 	rm -rf output.txt
 	rm -rf out
