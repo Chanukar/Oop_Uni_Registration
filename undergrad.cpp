@@ -34,7 +34,7 @@ bool Undergrad::sufficient_marks()
     }
     else
     {
-        cout << "You Are Eligible To Enrol In This Degree Degree. Please Wait For The University Offer" << endl;
+        cout << "You Are Eligible To Enrol In This Degree. Please Wait For The University Offer" << endl;
     }
     return is_sufficient;
 }
