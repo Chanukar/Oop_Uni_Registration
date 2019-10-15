@@ -11,7 +11,7 @@ if [ "$DIFF" == "" ]
 then
     echo Test 01 Passed
 fi
-    ./out < testcases/input01.txt | diff - testcases/output01.txt
+    echo "${DIFF}"
 
 
 
@@ -21,7 +21,7 @@ if [ "$DIFF" == "" ]
 then
     echo Test 02 Passed
 fi
-    ./out < testcases/input02.txt | diff - testcases/output02.txt
+    echo "${DIFF}"
 
 
 echo Test 03: Admin login when 2 students applied, 1 eligible applied
@@ -30,7 +30,7 @@ if [ "$DIFF" == "" ]
 then
     echo Test 03 Passed
 fi
-    ./out < testcases/input03.txt | diff - testcases/output03.txt
+    echo "${DIFF}"
 
 
 echo Test 04: Admin login when 2 eligible PG, and 1 eligible UG applied
@@ -39,4 +39,4 @@ if [ "$DIFF" == "" ]
 then
     echo Test 04 Passed
 fi
-    ./out < testcases/input04.txt | diff - testcases/output04.txt
+    echo "${DIFF}"
