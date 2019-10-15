@@ -1,17 +1,26 @@
-registration: user.o undergrad. postgrad.o main.o
-	g++ -o registration user.o undergrad.o postgrad.o main.o
+# Course: Object Oriented Programming
+# Major Practical
+# Authors:
+# Student IDs: a1782891, a, a
+# Description: Makefile for our University enrolment system
 
-user.o: user.cpp user.h
-	g++ -c user.cpp
+all: registration
 
-undergrad.o: undergrad.cpp undergrad.h
-	g++ -c undergrad.cpp user.cpp
+registration:
+	g++ -std=c++11 -o out user.cpp undergrad.cpp postgrad.cpp main.cpp
+	./out
+	rm -rf out
+	clear
 
-postgrad.o: postgrad.cpp postgrad.h
-	g++ -c postgrad.cpp undergrad.cpp user.cpp
+faculty:
+	g++ test_faculty.cpp Degree.cpp Faculty.cpp -o out
+	./out
 
-main.o: main.cpp
-	g++ -c main.cpp
-
+test:
+	g++ -std=c++11 -o out user.cpp undergrad.cpp postgrad.cpp main.cpp
+	./out < testcases/ input.txt > testcases/output.txt
+	nano testcases/output.txt
+	rm -rf output.txt
+	rm -rf out
 clean:
-	rm *.o registration
+	rm -rf out
