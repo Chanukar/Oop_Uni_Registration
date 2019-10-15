@@ -1,14 +1,15 @@
-registration: user.o undergrad.o postgrad.o main.o
-	g++ -std=c++11 -o registration user.o undergrad.o postgrad.o main.cpp
+objects = user.o undergrad.o postgrad.o main.o
+registration: $(objects)
+	g++ -std=c++11 -o registration $(objects)
 
 user.o: user.cpp user.h
-	g++ -std=c++11 -c user.cpp
+	g++ -std=c++11 -c $< -o $@
 
 undergrad.o: undergrad.cpp
-	g++ -std=c++11 -c undergrad.cpp
+	g++ -std=c++11 -c $< -o $@
 
 postgrad.o: postgrad.cpp
-	g++ -std=c++11 -c postgrad.cpp
+	g++ -std=c++11 -c $< -o $@
 
 test:
 	g++ -std=c++11 -o out user.cpp undergrad.cpp postgrad.cpp main.cpp
