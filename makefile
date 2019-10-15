@@ -16,6 +16,7 @@ postgrad.o: postgrad.cpp
 
 test: $(objects)
 	g++ -std=c++11 -o out $(objects)
+	clear
 	bash testall
 	rm -rf out
 
