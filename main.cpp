@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "postgrad.h"
+#include <unistd.h>
 using namespace std;
 
 int prompt(string[], int&);
@@ -31,6 +32,8 @@ int main()
             undergrad_register->back().undergradprompt();
             system("clear");
             sufficient_marks = undergrad_register->back().sufficient_marks();
+            usleep(3000000);
+            system("clear");
             if(!sufficient_marks)
             {
                 undergrad_register->pop_back();

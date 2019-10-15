@@ -20,7 +20,7 @@ Select The Faculty That You Want To Enrol In: [H[2J
 4.Bachelor of Architecture
 
 Select The Undergraduate Degree That You Want To Enrol In: [H[2JYou Are Eligible To Enrol In This Degree. Please Wait For The University Offer
-
+[H[2J
 Welcome to The University Registration and Login System
 
 1.Undergraduate Registration
