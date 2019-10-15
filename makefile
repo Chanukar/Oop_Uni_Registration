@@ -18,9 +18,9 @@ faculty:
 
 test:
 	g++ -std=c++11 -o out user.cpp undergrad.cpp postgrad.cpp main.cpp
-	./out < testcases/ input.txt > testcases/output.txt
+	./out < testcases/input.txt > testcases/output.txt
 	nano testcases/output.txt
-	rm -rf output.txt
+	rm -rf output.txts
 	rm -rf out
 clean:
 	rm -rf out

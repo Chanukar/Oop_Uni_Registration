@@ -11,7 +11,6 @@ int main()
     vector<Postgrad> *postgrad_register = new vector<Postgrad>;
 	int option_size = 4;
     string option[4] = {"Undergraduate Registration", "Postgraduate Registration", "Admin", "Quit"};
-    
     bool sufficient_marks = true;
     bool is_registration_active = true;
     int input_number;
@@ -49,7 +48,6 @@ int main()
             postgrad_register->back().undergradprompt();
             system("clear");
             sufficient_marks = postgrad_register->back().sufficient_marks();
-            system("clear");
             if(!sufficient_marks)
             {
                 postgrad_register->pop_back();
