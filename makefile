@@ -19,6 +19,7 @@ test: $(objects)
 	clear
 	bash testall
 	rm -rf out
+	rm *.o
 
 clean:
 	rm *.o registration
