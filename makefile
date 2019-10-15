@@ -15,9 +15,8 @@ postgrad.o: postgrad.cpp
 	g++ -std=c++11 -c $< -o $@
 
 test: $(objects)
-	g++ -std=c++11 -o registration $(objects)
-	./out < testcases/input.txt | diff - testcases/realoutput.txt
-	rm -rf output.txt
+	g++ -std=c++11 -o out $(objects)
+	bash testall
 	rm -rf out
 
 clean:
