@@ -117,3 +117,24 @@ void User::setlastname(string& name)
 {
     lastname = name;
 }
+
+string User::getfirstname()
+{
+    return firstname;
+}
+
+
+string User::getlastname()
+{
+    return lastname;
+}
+
+string User::getfaculty()
+{
+    return facultychoise;
+}
+
+string User::getdegree()
+{
+    return degreechoise;
+}

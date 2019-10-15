@@ -38,3 +38,8 @@ bool Undergrad::sufficient_marks()
     }
     return is_sufficient;
 }
+
+double Undergrad::getmarks()
+{
+    return marks;
+}

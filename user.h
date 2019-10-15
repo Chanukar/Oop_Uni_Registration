@@ -36,6 +36,10 @@ class User{
         void postgradprompt();
         void setfirstname(string& name);
         void setlastname(string& name);
+        string getfirstname();
+        string getlastname();
+        string getfaculty();
+        string getdegree();
 };
 
 
