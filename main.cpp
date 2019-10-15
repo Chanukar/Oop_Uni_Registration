@@ -10,7 +10,7 @@ int main()
     vector<Undergrad> *undergrad_register = new vector<Undergrad>;
     vector<Postgrad> *postgrad_register = new vector<Postgrad>;
 	int option_size = 4;
-    string option[option_size] = {"Undergraduate Registration", "Postgraduate Registration", "Admin", "Quit"};
+    string option[4] = {"Undergraduate Registration", "Postgraduate Registration", "Admin", "Quit"};
     
     bool sufficient_marks = true;
     bool is_registration_active = true;
@@ -32,7 +32,6 @@ int main()
             undergrad_register->back().undergradprompt();
             system("clear");
             sufficient_marks = undergrad_register->back().sufficient_marks();
-            system("clear");
             if(!sufficient_marks)
             {
                 undergrad_register->pop_back();
@@ -64,7 +63,7 @@ int main()
             bool is_authenticated = false;
             int admin_input;
             int admin_option_size = 2;
-            string admin_options[admin_option_size] = {"Undergraduates Details", "Postgraduate Details"};
+            string admin_options[2] = {"Undergraduates Details", "Postgraduate Details"};
             cout << "Admin Login" << endl;
             while(!is_authenticated)
             {
