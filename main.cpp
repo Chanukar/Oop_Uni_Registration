@@ -2,6 +2,7 @@
 #include <vector>
 #include "postgrad.h"
 #include <unistd.h>
+#include <cstdlib>
 using namespace std;
 
 int prompt(string[], int&);

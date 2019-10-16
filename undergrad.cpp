@@ -1,4 +1,5 @@
 #include "undergrad.h"
+#include <cstdlib>
 
 Undergrad::Undergrad() : User(), marks(0.0) {}
 
