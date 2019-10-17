@@ -1,8 +1,9 @@
 #include <iostream>
 #include <string>
 #include <regex>
+#include "util.h"
+
 using namespace std;
-bool check_crazy(string);
 bool wasInteger(string);
 
 int main()
