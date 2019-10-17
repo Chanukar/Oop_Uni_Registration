@@ -20,7 +20,7 @@ bool check_crazy(string a)
 	int length = a.length();
 	if((length>0)&&(length <= 5))
 	{
-		if(wasInteger(a))
+		if(regex_match(a, regex("[+-]?[0-9]+")))
 		{
 			go = true;
 		}
@@ -35,8 +35,4 @@ bool check_crazy(string a)
 	}
 
 	return go;
-}
-
-bool wasInteger(const std::string num) {
-    return regex_match(num, regex("[+-]?[0-9]+"));
 }

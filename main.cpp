@@ -3,9 +3,12 @@
 #include "postgrad.h"
 #include <unistd.h>
 #include <cstdlib>
+#include <string>
+#include <regex>
 using namespace std;
 
 int prompt(string[], int&);
+string check_crazy(string);
 
 int main()
 {
@@ -107,20 +110,23 @@ int main()
 
 int prompt(string array[], int& size)
 {
-    int input;
+    string input;
     int i;
     bool is_input = true;
-
+    double input1;
 	while (is_input)
     {
+        std::string::size_type sz;
         for (i=0; i<size; i++)
         {
             if (i == 0) {cout << "\n"; }
             std::cout << i+1 << "." << array[i] << endl;
         }
-        std::cout << "\nSelect One of The Following Option: ";
+        std::cout << "\nSelect One of The above Option: ";
         cin >> input;
-        if (input < 1 || input > i)
+        input = check_crazy(input);
+        input1 = stoi(input, &sz);
+        if((input1 < 1 || input1 > i))
         {
             continue;
         }
@@ -129,5 +135,28 @@ int prompt(string array[], int& size)
             is_input = false;
         }
     }
-    return input;
+    return input1;
+}
+
+string check_crazy(string a)
+{
+	string go;
+	int length = a.length();
+	if((length>0)&&(length <= 5))
+	{
+		if(regex_match(a, regex("[+-]?[0-9]+")))
+		{
+			go = a;
+		}
+		else
+		{
+			go = "0";
+		}
+	}
+	else
+	{
+		go = "0";
+	}
+
+	return go;
 }

@@ -19,8 +19,14 @@ void Undergrad::personal_detail_prompt()
         cout << "Enter Your The Valid ATAR Score: ";
         cin >> ATAR_score;
         this->marks = ATAR_score;
-        if (ATAR_score<0 || ATAR_score>100) {continue;}
-        else {is_valid_ATAR = false;}
+        if (ATAR_score<0 || ATAR_score>100)
+        {
+            continue;
+        }
+        else
+        {
+            is_valid_ATAR = false;
+        }
     }
 }
 
