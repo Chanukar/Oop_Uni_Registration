@@ -52,9 +52,11 @@ int main()
             system("clear");
             postgrad_register->back().facultyprompt();
             system("clear");
-            postgrad_register->back().undergradprompt();
+            postgrad_register->back().postgradprompt();
             system("clear");
             sufficient_marks = postgrad_register->back().sufficient_marks();
+            usleep(3000000);
+            system("clear");
             if(!sufficient_marks)
             {
                 postgrad_register->pop_back();
