@@ -1,12 +1,19 @@
+#include <iostream>
 #include "undergrad.h"
 #include <cstdlib>
+#include <string>
+#include <regex>
 
-Undergrad::Undergrad() : User(), marks(0.0) {}
+Undergrad::Undergrad() : User(), marks(0.0)
+{
+
+}
 
 void Undergrad::personal_detail_prompt()
 {
     string first_name, last_name;
-    double ATAR_score;
+    string ATAR_score;
+    double ATAR_score1;
     bool is_valid_ATAR = true;
     std::cout << "Enter Your First Name: ";
     cin >> first_name;
@@ -16,16 +23,19 @@ void Undergrad::personal_detail_prompt()
     this->setlastname(last_name);
     while(is_valid_ATAR)
     {
+    std::string::size_type sz;
         cout << "Enter Your The Valid ATAR Score: ";
         cin >> ATAR_score;
-        this->marks = ATAR_score;
-        if (ATAR_score<0 || ATAR_score>100)
+
+        if(regex_match(ATAR_score, regex("[+-]?[0-9]+")))
         {
-            continue;
-        }
-        else
-        {
-            is_valid_ATAR = false;
+            if (ATAR_score1<0 || ATAR_score1>100)
+            {
+                ATAR_score1 = stod(ATAR_score, &sz);
+                this->marks = ATAR_score1;
+                continue;
+            }
+            else {is_valid_ATAR = false;}
         }
     }
 }

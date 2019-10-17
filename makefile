@@ -21,6 +21,11 @@ test: $(objects)
 	rm -rf out
 	rm *.o
 
+debug:
+	g++ -std=c++11 -o out user.cpp undergrad.cpp postgrad.cpp main.cpp
+	./out
+	rm -rf out
+
 clean:
 	rm *.o registration
 	clear
