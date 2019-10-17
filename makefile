@@ -21,7 +21,7 @@ test: $(objects)
 	rm -rf out
 	rm *.o
 
-debug:
+code:
 	g++ -std=c++11 -o out user.cpp undergrad.cpp postgrad.cpp main.cpp
 	./out
 	rm -rf out

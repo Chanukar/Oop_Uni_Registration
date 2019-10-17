@@ -1,11 +1,20 @@
 #include "postgrad.h"
+#include <iostream>
+#include <regex>
+#include <string>
 
-Postgrad::Postgrad() : Undergrad() {}
+using namespace std;
+
+Postgrad::Postgrad() : Undergrad()
+{
+
+}
 
 void Postgrad::personal_detail_prompt()
 {
     string first_name, last_name;
-    double GPA_score;
+    string GPA_score;
+    double GPA_score1;
     bool is_valid_GPA = true;
 
     std::cout << "Enter Your First Name: ";
@@ -16,11 +25,22 @@ void Postgrad::personal_detail_prompt()
     this->setlastname(last_name);
     while(is_valid_GPA)
     {
+        std::string::size_type sz;
         cout << "Enter Your Valid Undergraduate GPA Score: ";
         cin >> GPA_score;
-        this->marks = GPA_score;
-        if (GPA_score<0 || GPA_score>7) {continue;}
-        else {is_valid_GPA = false;}
+        if(regex_match(GPA_score, regex("[+-]?[0-9]+")))
+        {
+            GPA_score1 = stod(GPA_score, &sz);
+            if (GPA_score1<0 || GPA_score1>7)
+            {
+                this->marks = GPA_score1;
+                continue;
+            }
+            else
+            {
+                is_valid_GPA = false;
+            }
+        }
     }
 }
 
