@@ -6,7 +6,7 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The Following Option: [H[2JEnter Your First Name: Enter Your Last Name: Enter Your Valid Undergraduate GPA Score: [H[2J
+Select One of The above Option: [H[2JEnter Your First Name: Enter Your Last Name: Enter Your Valid Undergraduate GPA Score: [H[2J
 1.Faculty of Science
 2.Faculty of Arts
 3.Law School
@@ -14,13 +14,15 @@ Select One of The Following Option: [H[2JEnter Your First Name: Enter Your Las
 5.Medical School
 
 Select The Faculty That You Want To Enrol In: [H[2J
-1.Bachelor of Engineering
-2.Bachelor of Computer Science
-3.Bachelor of Science
-4.Bachelor of Architecture
+1.Master of Engineering
+2.Master of Computer Science
+3.Master of Science
+4.Master of Architecture
 
-Select The Undergraduate Degree That You Want To Enrol In: [H[2JYou Are Eligible To Enrol In This Degree. Please Wait For The University Offer.
-
+Select The Postgraduate Degree That You Want To Enrol In: [H[2J
+You Do Not Have Sufficient Marks To Enrol In This Degee Program.
+Thank You For Using The Registration Form.
+[H[2J
 Welcome to The University Registration and Login System
 
 1.Undergraduate Registration
@@ -28,7 +30,7 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The Following Option: [H[2JEnter Your First Name: Enter Your Last Name: Enter Your Valid Undergraduate GPA Score: [H[2J
+Select One of The above Option: [H[2JEnter Your First Name: Enter Your Last Name: Enter Your Valid Undergraduate GPA Score: [H[2J
 1.Faculty of Science
 2.Faculty of Arts
 3.Law School
@@ -36,13 +38,15 @@ Select One of The Following Option: [H[2JEnter Your First Name: Enter Your Las
 5.Medical School
 
 Select The Faculty That You Want To Enrol In: [H[2J
-1.Bachelor of Law
-2.Bachelor of Criminology
-3.Bachelor of International Relations
-4.Bachelor of Litigation
+1.Master of Law
+2.Master of Criminology
+3.Master of International Relations
+4.Master of Litigation
 
-Select The Undergraduate Degree That You Want To Enrol In: [H[2JYou Are Eligible To Enrol In This Degree. Please Wait For The University Offer.
-
+Select The Postgraduate Degree That You Want To Enrol In: [H[2J
+You Do Not Have Sufficient Marks To Enrol In This Degee Program.
+Thank You For Using The Registration Form.
+[H[2J
 Welcome to The University Registration and Login System
 
 1.Undergraduate Registration
@@ -50,7 +54,7 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The Following Option: [H[2JEnter Your First Name: Enter Your Last Name: Enter Your The Valid ATAR Score: [H[2J
+Select One of The above Option: [H[2JEnter Your First Name: Enter Your Last Name: Enter Your The Valid ATAR Score: [H[2J
 1.Faculty of Science
 2.Faculty of Arts
 3.Law School
@@ -63,7 +67,9 @@ Select The Faculty That You Want To Enrol In: [H[2J
 3.Bachelor of Accounting
 4.Bachelor of Business
 
-Select The Undergraduate Degree That You Want To Enrol In: [H[2JYou Are Eligible To Enrol In This Degree. Please Wait For The University Offer
+Select The Undergraduate Degree That You Want To Enrol In: [H[2J
+You Do Not Have Sufficient Marks To Enrol In This Degee Program
+Thank You For Using The Registration Form.
 [H[2J
 Welcome to The University Registration and Login System
 
@@ -72,7 +78,7 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The Following Option: Admin Login
+Select One of The above Option: Admin Login
 
 Enter UserName: Password: 
 Login Successful!
@@ -80,8 +86,7 @@ Login Successful!
 1.Undergraduates Details
 2.Postgraduate Details
 
-Select One of The Following Option: Bharath	Nair	99	Faculty of the Professions	Bachelor of Accounting	
-
+Select One of The above Option: 
 Welcome to The University Registration and Login System
 
 1.Undergraduate Registration
@@ -89,7 +94,7 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The Following Option: Admin Login
+Select One of The above Option: Admin Login
 
 Enter UserName: Password: 
 Login Successful!
@@ -97,9 +102,7 @@ Login Successful!
 1.Undergraduates Details
 2.Postgraduate Details
 
-Select One of The Following Option: Bharath	Nair	6	Faculty of Science	Bachelor of Computer Science	
-Bharath	Nair	6	Law School	Bachelor of International Relations	
-
+Select One of The above Option: 
 Welcome to The University Registration and Login System
 
 1.Undergraduate Registration
@@ -107,4 +110,4 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The Following Option: The Program Has Been Successfully Terminated
+Select One of The above Option: The Program Has Been Successfully Terminated

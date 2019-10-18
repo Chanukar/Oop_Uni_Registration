@@ -6,7 +6,7 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The Following Option: [H[2JEnter Your First Name: Enter Your Last Name: Enter Your The Valid ATAR Score: [H[2J
+Select One of The above Option: [H[2JEnter Your First Name: Enter Your Last Name: Enter Your The Valid ATAR Score: [H[2J
 1.Faculty of Science
 2.Faculty of Arts
 3.Law School
@@ -19,7 +19,9 @@ Select The Faculty That You Want To Enrol In: [H[2J
 3.Bachelor of Science
 4.Bachelor of Architecture
 
-Select The Undergraduate Degree That You Want To Enrol In: [H[2JYou Are Eligible To Enrol In This Degree. Please Wait For The University Offer
+Select The Undergraduate Degree That You Want To Enrol In: [H[2J
+You Do Not Have Sufficient Marks To Enrol In This Degee Program
+Thank You For Using The Registration Form.
 [H[2J
 Welcome to The University Registration and Login System
 
@@ -28,4 +30,4 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The Following Option: The Program Has Been Successfully Terminated
+Select One of The above Option: The Program Has Been Successfully Terminated
