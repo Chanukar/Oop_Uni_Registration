@@ -47,6 +47,7 @@ void User::facultyprompt()
         }
         std::cout << "\nSelect The Faculty That You Want To Enrol In: ";
         cin >> input;
+        system("clear");
         input = check_crazy1(input);
         input1 = stoi(input, &sz);
         if (input1 < 1 || input1 > i)
@@ -79,6 +80,7 @@ void User::undergradprompt()
         }
         std::cout << "\nSelect The Undergraduate Degree That You Want To Enrol In: ";
         cin >> input;
+        system("clear");
         input = check_crazy1(input);
         input1 = stoi(input, &sz);
         if (input1 < 1 || input1 > i)
@@ -95,10 +97,11 @@ void User::undergradprompt()
 }
 void User::postgradprompt()
 {
-    int input;
+    std::string::size_type sz;
+    string input;
+    double input1;
     int i;
     bool is_input = true;
-
 	while (is_input)
     {
         for (i=0; i<postgrad_degrees[facultynum-1].size(); i++)
@@ -108,7 +111,10 @@ void User::postgradprompt()
         }
         std::cout << "\nSelect The Postgraduate Degree That You Want To Enrol In: ";
         cin >> input;
-        if (input < 1 || input > i)
+        system("clear");
+        input = check_crazy1(input);
+        input1 = stoi(input, &sz);
+        if (input1 < 1 || input1 > i)
         {
             continue;
         }
@@ -117,7 +123,7 @@ void User::postgradprompt()
             is_input = false;
         }
     }
-    degreechoise = undergrad_degrees[facultynum-1][input-1];
+    degreechoise = undergrad_degrees[facultynum-1][input1-1];
 
 }
 

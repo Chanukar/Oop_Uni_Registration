@@ -27,7 +27,7 @@ void Undergrad::personal_detail_prompt()
     std::string::size_type sz;
         cout << "Enter Your The Valid ATAR Score: ";
         cin >> ATAR_score;
-
+    
         if(regex_match(ATAR_score, regex("[+-]?[0-9]+")))
         {
             if (ATAR_score1<0 || ATAR_score1>100)
