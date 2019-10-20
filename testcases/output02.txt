@@ -6,20 +6,20 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The above Option: [H[2JEnter Your First Name: Enter Your Last Name: Enter Your Valid Undergraduate GPA Score: [H[2J
+Select One of The above Option: [H[2J[H[2JEnter Your First Name: Enter Your Last Name: Enter Your Valid Undergraduate GPA Score: [H[2J
 1.Faculty of Science
 2.Faculty of Arts
 3.Law School
 4.Faculty of the Professions
 5.Medical School
 
-Select The Faculty That You Want To Enrol In: [H[2J
+Select The Faculty That You Want To Enrol In: [H[2J[H[2J
 1.Master of Health
 2.Master of Medicine
 3.Master of Vetenary
 4.Master of Oral Health
 
-Select The Postgraduate Degree That You Want To Enrol In: [H[2J
+Select The Postgraduate Degree That You Want To Enrol In: [H[2J[H[2J
 You Do Not Have Sufficient Marks To Enrol In This Degee Program.
 Thank You For Using The Registration Form.
 [H[2J
@@ -30,4 +30,4 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The above Option: The Program Has Been Successfully Terminated
+Select One of The above Option: [H[2JThe Program Has Been Successfully Terminated

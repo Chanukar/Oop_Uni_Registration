@@ -6,20 +6,20 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The above Option: [H[2JEnter Your First Name: Enter Your Last Name: Enter Your Valid Undergraduate GPA Score: [H[2J
+Select One of The above Option: [H[2J[H[2JEnter Your First Name: Enter Your Last Name: Enter Your Valid Undergraduate GPA Score: [H[2J
 1.Faculty of Science
 2.Faculty of Arts
 3.Law School
 4.Faculty of the Professions
 5.Medical School
 
-Select The Faculty That You Want To Enrol In: [H[2J
+Select The Faculty That You Want To Enrol In: [H[2J[H[2J
 1.Master of Engineering
 2.Master of Computer Science
 3.Master of Science
 4.Master of Architecture
 
-Select The Postgraduate Degree That You Want To Enrol In: [H[2J
+Select The Postgraduate Degree That You Want To Enrol In: [H[2J[H[2J
 You Do Not Have Sufficient Marks To Enrol In This Degee Program.
 Thank You For Using The Registration Form.
 [H[2J
@@ -30,20 +30,20 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The above Option: [H[2JEnter Your First Name: Enter Your Last Name: Enter Your Valid Undergraduate GPA Score: [H[2J
+Select One of The above Option: [H[2J[H[2JEnter Your First Name: Enter Your Last Name: Enter Your Valid Undergraduate GPA Score: [H[2J
 1.Faculty of Science
 2.Faculty of Arts
 3.Law School
 4.Faculty of the Professions
 5.Medical School
 
-Select The Faculty That You Want To Enrol In: [H[2J
+Select The Faculty That You Want To Enrol In: [H[2J[H[2J
 1.Master of Law
 2.Master of Criminology
 3.Master of International Relations
 4.Master of Litigation
 
-Select The Postgraduate Degree That You Want To Enrol In: [H[2J
+Select The Postgraduate Degree That You Want To Enrol In: [H[2J[H[2J
 You Do Not Have Sufficient Marks To Enrol In This Degee Program.
 Thank You For Using The Registration Form.
 [H[2J
@@ -54,20 +54,20 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The above Option: [H[2JEnter Your First Name: Enter Your Last Name: Enter Your The Valid ATAR Score: [H[2J
+Select One of The above Option: [H[2J[H[2JEnter Your First Name: Enter Your Last Name: Enter Your The Valid ATAR Score: [H[2J
 1.Faculty of Science
 2.Faculty of Arts
 3.Law School
 4.Faculty of the Professions
 5.Medical School
 
-Select The Faculty That You Want To Enrol In: [H[2J
+Select The Faculty That You Want To Enrol In: [H[2J[H[2J
 1.Bachelor of Finance
 2.Bachelor of Economics
 3.Bachelor of Accounting
 4.Bachelor of Business
 
-Select The Undergraduate Degree That You Want To Enrol In: [H[2J
+Select The Undergraduate Degree That You Want To Enrol In: [H[2J[H[2J
 You Do Not Have Sufficient Marks To Enrol In This Degee Program
 Thank You For Using The Registration Form.
 [H[2J
@@ -78,7 +78,7 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The above Option: Admin Login
+Select One of The above Option: [H[2JAdmin Login
 
 Enter UserName: Password: 
 Login Successful!
@@ -86,7 +86,7 @@ Login Successful!
 1.Undergraduates Details
 2.Postgraduate Details
 
-Select One of The above Option: 
+Select One of The above Option: [H[2J
 Welcome to The University Registration and Login System
 
 1.Undergraduate Registration
@@ -94,7 +94,7 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The above Option: Admin Login
+Select One of The above Option: [H[2JAdmin Login
 
 Enter UserName: Password: 
 Login Successful!
@@ -102,7 +102,7 @@ Login Successful!
 1.Undergraduates Details
 2.Postgraduate Details
 
-Select One of The above Option: 
+Select One of The above Option: [H[2J
 Welcome to The University Registration and Login System
 
 1.Undergraduate Registration
@@ -110,4 +110,4 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The above Option: The Program Has Been Successfully Terminated
+Select One of The above Option: [H[2JThe Program Has Been Successfully Terminated

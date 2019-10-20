@@ -40,3 +40,11 @@ then
     echo Test 04 Passed
 fi
     echo "${DIFF}"
+
+echo Test 05: Random strings as input for all fields taking an int for 4 times before a valid input.
+DIFF=$(./out < testcases/input05.txt | diff - testcases/output05.txt) 
+if [ "$DIFF" == "" ] 
+then
+    echo Test 05 Passed
+fi
+    echo "${DIFF}"

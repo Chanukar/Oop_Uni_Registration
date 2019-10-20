@@ -32,6 +32,7 @@ set:
 	./out < testcases/input02.txt > testcases/output02.txt
 	./out < testcases/input03.txt > testcases/output03.txt
 	./out < testcases/input04.txt > testcases/output04.txt
+	./out < testcases/input05.txt > testcases/output05.txt
 	echo All set!
 	rm -rf out
 	clear
