@@ -24,7 +24,6 @@ int main()
     {
         std::cout << "\nWelcome to The University Registration and Login System" << endl;
         input_number = prompt(option, option_size);
-
         if (input_number == 1)
         {
             undergrad_register->push_back(Undergrad());
@@ -126,6 +125,7 @@ int prompt(string array[], int& size)
         }
         std::cout << "\nSelect One of The above Option: ";
         cin >> input;
+        system("clear");
         input = check_crazy(input);
         input1 = stoi(input, &sz);
         if((input1 < 1 || input1 > i))

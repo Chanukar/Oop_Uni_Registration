@@ -1,4 +1,11 @@
 #include "user.h"
+#include <util.h>
+#include <string>
+#include <regex>
+
+using namespace std;
+
+string check_crazy1(string);
 
 User::User():
     firstname("Default Initialised"),
@@ -26,10 +33,11 @@ User::User():
 
 void User::facultyprompt()
 {
-    int input;
+    string input;
     int i;
     bool is_input = true;
-
+    std::string::size_type sz;
+    int input1;
 	while (is_input)
     {
         for (i=0; i<faculties_vector.size(); i++)
@@ -39,7 +47,9 @@ void User::facultyprompt()
         }
         std::cout << "\nSelect The Faculty That You Want To Enrol In: ";
         cin >> input;
-        if (input < 1 || input > i)
+        input = check_crazy1(input);
+        input1 = stoi(input, &sz);
+        if (input1 < 1 || input1 > i)
         {
              
             continue;
@@ -49,16 +59,17 @@ void User::facultyprompt()
             is_input = false;
         }
     }
-    facultychoise = faculties_vector[input-1];
-    facultynum = input;
+    facultychoise = faculties_vector[input1-1];
+    facultynum = input1;
 }
 
 void User::undergradprompt()
 {
-    int input;
+    string input;
+    double input1;
     int i;
     bool is_input = true;
-
+    std::string::size_type sz;
 	while (is_input)
     {
         for (i=0; i<undergrad_degrees[facultynum-1].size(); i++)
@@ -68,7 +79,9 @@ void User::undergradprompt()
         }
         std::cout << "\nSelect The Undergraduate Degree That You Want To Enrol In: ";
         cin >> input;
-        if (input < 1 || input > i)
+        input = check_crazy1(input);
+        input1 = stoi(input, &sz);
+        if (input1 < 1 || input1 > i)
         {
             continue;
         }
@@ -77,7 +90,7 @@ void User::undergradprompt()
             is_input = false;
         }
     }
-    degreechoise = undergrad_degrees[facultynum-1][input-1];
+    degreechoise = undergrad_degrees[facultynum-1][input1-1];
 
 }
 void User::postgradprompt()
@@ -137,4 +150,27 @@ string User::getfaculty()
 string User::getdegree()
 {
     return degreechoise;
+}
+
+string check_crazy1(string a)
+{
+	string go;
+	int length = a.length();
+	if((length>0)&&(length <= 5))
+	{
+		if(regex_match(a, regex("[+-]?[0-9]+")))
+		{
+			go = a;
+		}
+		else
+		{
+			go = "0";
+		}
+	}
+	else
+	{
+		go = "0";
+	}
+
+	return go;
 }
