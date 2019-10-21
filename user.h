@@ -4,12 +4,12 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
+//included libraries for our code
 class User{
-    private:
+    private:        //private attributes which can only be accessed from this class
         string firstname;
         string lastname;
-    protected:
+    protected:      //attributes which can be inherited by a class
         vector<string> faculties_vector;
         vector<double> marks_undergrad_vector;
         vector<double> marks_postgrad_vector;
@@ -29,7 +29,7 @@ class User{
         string degreechoise;
         int facultynum;
         int degreenum;
-    public:
+    public:     //attributes which can be accessed from any class
         User();
         void facultyprompt();
         void undergradprompt();
