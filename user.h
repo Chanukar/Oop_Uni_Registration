@@ -7,58 +7,29 @@ using namespace std;
 
 class User{
     private:
+
+    protected:
+
         string firstname;
         string lastname;
-    protected:
+        double marks;    
         vector<string> faculties_vector;
-        vector<double> marks_undergrad_vector;
-        vector<double> marks_postgrad_vector;
-        vector<string> science_faculty_undergrads;
-        vector<string> arts_faculty_undergrads;
-        vector<string> law_school_undergrads;
-        vector<string> professions_faculty_undergrads;
-        vector<string> medical_school_undergrads;
-        vector<string> science_faculty_postgrads;
-        vector<string> arts_faculty_postgrads;
-        vector<string> law_school_postgrads;
-        vector<string> professions_faculty_postgrads;
-        vector<string> medical_school_postgrads;
-        vector<vector<string> > undergrad_degrees;
-        vector<vector<string> > postgrad_degrees;
         string facultychoise;
         string degreechoise;
         int facultynum;
         int degreenum;
+
     public:
         User();
+        virtual void personal_detail_prompt() = 0;
         void facultyprompt();
-        void undergradprompt();
-        void postgradprompt();
-        void setfirstname(string& name);
-        void setlastname(string& name);
+        virtual void degree_prompt() = 0;
+        virtual bool sufficient_marks() = 0;
         string getfirstname();
         string getlastname();
         string getfaculty();
         string getdegree();
+        double getmarks();
 };
 
-
-
-/* class Staff{
-    private:
-        string username;
-        string password;
-    public:
-        Staff();
-        Staff();
-};
-
-class Admin{
-    private:
-
-    public:
-        Admin();
-        Admin();
-};
- */
 #endif

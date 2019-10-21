@@ -1,49 +1,71 @@
-#include <iostream>
 #include "undergrad.h"
-#include <cstdlib>
-#include <string>
-#include <regex>
 
-Undergrad::Undergrad() : User(), marks(0.0)
-{
+Undergrad::Undergrad() :
+    User(),
+    science_undergrad({"Bachelor of Engineering", "Bachelor of Computer Science", "Bachelor of Science", "Bachelor of Architecture"}),
+    arts_undergrad({"Bachelor of Sociology", "Bachelor of music", "Bachelor of Media", "Bachelor of Arts"}),
+    law_undergrad({"Bachelor of Law", "Bachelor of Criminology", "Bachelor of International Relations", "Bachelor of Litigation"}),
+    professions_undergrad({"Bachelor of Finance", "Bachelor of Economics", "Bachelor of Accounting", "Bachelor of Business"}),
+    medical_undergrad({"Bachelor of Health", "Bachelor of Medicine", "Bachelor of Vetenary", "Bachelor of Oral Health"}),
+    degrees_undergrad({science_undergrad, arts_undergrad, law_undergrad, professions_undergrad, medical_undergrad}),
+    marks_undergrad({94.0, 50.0, 85.0, 70.0, 96.0})
+    {}
 
-}
 
 void Undergrad::personal_detail_prompt()
 {
     string first_name, last_name;
-    string ATAR_score;
-    double ATAR_score1;
+    double ATAR_score;
     bool is_valid_ATAR = true;
+	
     std::cout << "Enter Your First Name: ";
     cin >> first_name;
-    this->setfirstname(first_name);
+    firstname = first_name;
     std::cout << "Enter Your Last Name: ";
     cin >> last_name;
-    this->setlastname(last_name);
+    lastname = last_name;
     while(is_valid_ATAR)
     {
-    std::string::size_type sz;
-        cout << "Enter Your The Valid ATAR Score: ";
+        cout << "Enter Your Valid ATAR Score: ";
         cin >> ATAR_score;
-    
-        if(regex_match(ATAR_score, regex("[+-]?[0-9]+")))
+        marks = ATAR_score;
+        if (ATAR_score<0 || ATAR_score>100) {continue;}
+        else {is_valid_ATAR = false;}
+    }
+}
+
+void Undergrad::degree_prompt()
+{
+    int input;
+    int i;
+    bool is_input = true;
+
+	while (is_input)
+    {
+        for (i=0; i<degrees_undergrad[facultynum-1].size(); i++)
         {
-            if (ATAR_score1<0 || ATAR_score1>100)
-            {
-                ATAR_score1 = stod(ATAR_score, &sz);
-                this->marks = ATAR_score1;
-                continue;
-            }
-            else {is_valid_ATAR = false;}
+            if (i == 0) {cout << "\n"; }
+            std::cout << i+1 << "." << degrees_undergrad[facultynum-1][i] << endl;
+        }
+        std::cout << "\nSelect The Degree Program That You Want To Enrol In: ";
+        cin >> input;
+        if (input < 1 || input > i)
+        {
+            continue;
+        }
+        else
+        {
+            is_input = false;
         }
     }
+    degreechoise = degrees_undergrad[facultynum-1][input-1];
+
 }
 
 bool Undergrad::sufficient_marks()
 {
     bool is_sufficient = true;
-    if (marks < marks_undergrad_vector[facultynum-1])
+    if (marks < marks_undergrad[facultynum-1])
     {
         cout << "\nYou Do Not Have Sufficient Marks To Enrol In This Degee Program" << endl;
         cout << "Thank You For Using The Registration Form." << endl;
@@ -54,9 +76,4 @@ bool Undergrad::sufficient_marks()
         cout << "You Are Eligible To Enrol In This Degree. Please Wait For The University Offer" << endl;
     }
     return is_sufficient;
-}
-
-double Undergrad::getmarks()
-{
-    return marks;
 }
