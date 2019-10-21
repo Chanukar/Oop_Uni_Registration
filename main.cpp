@@ -12,7 +12,7 @@ string check_crazy(string);
 
 int main()
 {
-    vector<Undergrad> *undergrad_register = new vector<Undergrad>;
+    vector<Undergrad> *undergrad_register = new vector<Undergrad>;		//vector in which we store the students
     vector<Postgrad> *postgrad_register = new vector<Postgrad>;
 	int option_size = 4;
     string option[4] = {"Undergraduate Registration", "Postgraduate Registration", "Admin", "Quit"};
