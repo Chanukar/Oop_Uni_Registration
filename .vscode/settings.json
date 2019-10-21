@@ -76,5 +76,6 @@
         "*.tcc": "cpp",
         "memory_resource": "cpp",
         "cinttypes": "cpp"
-    }
+    },
+    "git.ignoreLimitWarning": true
 }
