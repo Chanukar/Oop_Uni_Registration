@@ -3,7 +3,6 @@
 #include <cstdlib>
 #include <string>
 #include <regex>
-#include "util.h"
 
 Undergrad::Undergrad() : User(), marks(0.0)
 {
