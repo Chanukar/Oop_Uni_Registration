@@ -5,13 +5,16 @@ registration: $(objects)
 	./registration
 	make clean
 
-user.o: user.cpp user.h
+user.o: user.cpp
 	g++ -std=c++11 -c $< -o $@
 
 undergrad.o: undergrad.cpp
 	g++ -std=c++11 -c $< -o $@
 
 postgrad.o: postgrad.cpp
+	g++ -std=c++11 -c $< -o $@
+
+main.o: main.cpp
 	g++ -std=c++11 -c $< -o $@
 
 test: $(objects)
