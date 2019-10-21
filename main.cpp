@@ -6,7 +6,6 @@
 #include <string>
 #include <regex>
 using namespace std;
-
 int prompt(string[], int&);
 string check_crazy(string);
 
@@ -127,7 +126,7 @@ int prompt(string array[], int& size)
         cin >> input;
         system("clear");
         input = check_crazy(input);
-        input1 = stoi(input, &sz);
+        input1 = std::stoi(input, &sz);
         if((input1 < 1 || input1 > i))
         {
             continue;
@@ -146,7 +145,7 @@ string check_crazy(string a)
 	int length = a.length();
 	if((length>0)&&(length <= 5))
 	{
-		if(regex_match(a, regex("[+-]?[0-9]+")))
+		if(std::regex_match(a, std::regex("[+-]?[0-9]+")))
 		{
 			go = a;
 		}
