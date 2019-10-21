@@ -9,7 +9,7 @@ Undergrad::Undergrad() : User(), marks(0.0)
 
 }
 
-void Undergrad::personal_detail_prompt()
+void Undergrad::personal_detail_prompt()   //function that initializes variables and assigns the personal details that are input to them
 {
     string first_name, last_name;
     string ATAR_score;
@@ -26,7 +26,7 @@ void Undergrad::personal_detail_prompt()
     std::string::size_type sz;
         cout << "Enter Your The Valid ATAR Score: ";
         cin >> ATAR_score;
-    
+    //only allows enrollment if the input is the correct type
         if(regex_match(ATAR_score, regex("[+-]?[0-9]+")))
         {
             if (ATAR_score1<0 || ATAR_score1>100)
@@ -40,23 +40,23 @@ void Undergrad::personal_detail_prompt()
     }
 }
 
-bool Undergrad::sufficient_marks()
+bool Undergrad::sufficient_marks()      //function that rejects marks below threshold
 {
-    bool is_sufficient = true;
-    if (marks < marks_undergrad_vector[facultynum-1])
+    bool is_sufficient = true;          //returns true if there's enough marks
+    if (marks < marks_undergrad_vector[facultynum-1])       //checks marks
     {
         cout << "\nYou Do Not Have Sufficient Marks To Enrol In This Degee Program" << endl;
         cout << "Thank You For Using The Registration Form." << endl;
         is_sufficient = false;
     }
-    else
+    else        //allows enrollment
     {
         cout << "You Are Eligible To Enrol In This Degree. Please Wait For The University Offer" << endl;
     }
     return is_sufficient;
 }
 
-double Undergrad::getmarks()
+double Undergrad::getmarks()        //returns marks
 {
     return marks;
 }
