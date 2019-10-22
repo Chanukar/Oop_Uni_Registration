@@ -1,7 +1,9 @@
 #include "postgrad.h"
 
 Postgrad::Postgrad() :
+    //default contructor to create the object
     User(),
+    //default constructor with faculties as well as the grades required for the degrees are hardcoded
     science_postgrad({"Master of Engineering", "Master of Computer Science", "Master of Science", "Master of Architecture"}),
     arts_postgrad({"Master of Sociology", "Master of music", "Master of Media", "Master of Arts"}),
     law_postgrad({"Master of Law", "Master of Criminology", "Master of International Relations", "Master of Litigation"}),
@@ -13,10 +15,11 @@ Postgrad::Postgrad() :
 
 void Postgrad::personal_detail_prompt()
 {
+    //function to input details if they have the correct type
     string first_name, last_name;
     double GPA_score;
     bool is_valid_GPA = true;
-
+    //firstname and lastname have to be entered
     std::cout << "Enter Your First Name: ";
     cin >> first_name;
     firstname = first_name;
@@ -25,6 +28,7 @@ void Postgrad::personal_detail_prompt()
     lastname = last_name;
     while(is_valid_GPA)
     {
+	//gpa has to be of the correct type before accepted otherwise it loops
         cout << "Enter Your Valid Undergraduate GPA Score: ";
         cin >> GPA_score;
         marks = GPA_score;
@@ -35,6 +39,7 @@ void Postgrad::personal_detail_prompt()
 
 void Postgrad::degree_prompt()
 {
+    //function which asks postgrad degree is to be enrolled in and loops till a correct option is chosen
     int input;
     int i;
     bool is_input = true;
@@ -63,6 +68,7 @@ void Postgrad::degree_prompt()
 
 bool Postgrad::sufficient_marks()
 {
+    //enrollment is only allowed if gpa is above a certain threshold
     bool is_sufficient = true;
     if (marks < this->marks_postgrad[facultynum-1])
     {
