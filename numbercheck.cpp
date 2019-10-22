@@ -2,10 +2,10 @@
 #include <string>
 #include <regex>
 #include "util.h"
-
+//includes the libraries that are required for checking if the input is of the correct type
 using namespace std;
 bool wasInteger(string);
-
+//if integer then accepted
 int main()
 {
 	string abc;
@@ -17,6 +17,7 @@ int main()
 
 bool check_crazy(string a)
 {
+//checks if the string is correct or not
 	bool go = false;
 	int length = a.length();
 	if((length>0)&&(length <= 5))
