@@ -25,7 +25,7 @@ void admin(int (*promptptr)(vector<string>&), vector<Undergrad>*&undergrad_regis
         }
     cout << "\nLogin Successful!" << endl;
     //if admin login is successful then student enrollments are approved for both undergrads and post grads
-    vector<string>admin_menu = {"Undergraduates Details", "Postgraduate Details", "Sort Undergraduates", "Sort Postgraduates"};
+    vector<string>admin_menu = {"Undergraduates Details", "Postgraduate Details"};
     int admin_menu_input;
     admin_menu_input = promptptr(admin_menu);
             if(admin_menu_input == 1)
@@ -41,9 +41,5 @@ void admin(int (*promptptr)(vector<string>&), vector<Undergrad>*&undergrad_regis
                 {
                     cout << postgrad_register->at(i).getfirstname() << "\t" << postgrad_register->at(i).getlastname() << "\t" << postgrad_register->at(i).getmarks() << "\t" << postgrad_register->at(i).getfaculty() << "\t" << postgrad_register->at(i).getdegree() << endl;
                 }
-            }
-            else if(admin_menu_input == 3)
-            {
-
             }
 }
