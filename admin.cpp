@@ -5,7 +5,7 @@
 using namespace std;
 
 extern int prompt(vector<string>&);
-
+//admin registration function
 void admin(int (*promptptr)(vector<string>&), vector<Undergrad>*&undergrad_register, vector<Postgrad>*&postgrad_register)
 {
     string username;
@@ -15,6 +15,7 @@ void admin(int (*promptptr)(vector<string>&), vector<Undergrad>*&undergrad_regis
     cout << "Admin Login" << endl;
         while(!is_authenticated)
         {
+            //admin password and username is asked for and it loops till they are entered correctly
             cout << "\nEnter UserName: ";
             cin >> username;
             cout << "Password: ";
@@ -23,7 +24,7 @@ void admin(int (*promptptr)(vector<string>&), vector<Undergrad>*&undergrad_regis
             else {continue; }
         }
     cout << "\nLogin Successful!" << endl;
-
+    //if admin login is successful then student enrollments are approved for both undergrads and post grads
     vector<string>admin_menu = {"Undergraduates Details", "Postgraduate Details", "Sort Undergraduates", "Sort Postgraduates"};
     int admin_menu_input;
     admin_menu_input = promptptr(admin_menu);
