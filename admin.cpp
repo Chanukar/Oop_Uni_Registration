@@ -30,13 +30,17 @@ void admin(int (*promptptr)(vector<string>&), vector<Undergrad>*&undergrad_regis
     admin_menu_input = promptptr(admin_menu);
             if(admin_menu_input == 1)
             {
+                cout << "First Name" << "\t" << "Last Name" << "\t" << "ATAR" << "\t" << "Faculty" << "\t" << "Degree" <<endl;
+                cout<<endl;
                 for (int i=0; i<undergrad_register->size(); i++)
                 {
-                    cout << undergrad_register->at(i).getfirstname() << "\t" << undergrad_register->at(i).getlastname() << "\t" << undergrad_register->at(i).getmarks() << "\t" << undergrad_register->at(i).getfaculty() << "\t" << undergrad_register->at(i).getdegree() << endl;
+                    cout << undergrad_register->at(i).getfirstname() << "\t" << "\t" << undergrad_register->at(i).getlastname() << "\t"  << undergrad_register->at(i).getmarks() << "\t" << undergrad_register->at(i).getfaculty() << "\t" << undergrad_register->at(i).getdegree() << endl;
                 }
             }
             else if(admin_menu_input == 2)
             {
+                cout << "First Name" << "\t" << "Last Name" << "\t" << "GPA" << "\t" << "Faculty" << "\t" << "Degree" <<endl;
+                cout<<endl;
                 for (int i=0; i<postgrad_register->size(); i++)
                 {
                     cout << postgrad_register->at(i).getfirstname() << "\t" << postgrad_register->at(i).getlastname() << "\t" << postgrad_register->at(i).getmarks() << "\t" << postgrad_register->at(i).getfaculty() << "\t" << postgrad_register->at(i).getdegree() << endl;

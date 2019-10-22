@@ -31,6 +31,7 @@ void User::facultyprompt()
         }
         std::cout << "\nSelect The Faculty That You Want To Enrol In: ";
         cin >> input;
+        system("clear");
         for(int j=0; j<(input.length()-1); j++)
         {
             if(input.substr(j,j+1) != "1" || input.substr(j,j+1) != "2" || input.substr(j,j+1) != "3" || input.substr(j,j+1) != "4" || input.substr(j,j+1) != "5" || input.substr(j,j+1) != "6" || input.substr(j,j+1) != "7" || input.substr(j,j+1) != "8" ||  input.substr(j,j+1) != "9")
