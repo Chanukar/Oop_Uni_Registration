@@ -5,12 +5,12 @@
 
 using namespace std;
 
-Postgrad::Postgrad() : Undergrad()
+Postgrad::Postgrad() : Undergrad()      //default contructor to create the object
 {
 
 }
 
-void Postgrad::personal_detail_prompt()
+void Postgrad::personal_detail_prompt()     //function to input details if they have the correct type
 {
     string first_name, last_name;
     string GPA_score;
@@ -23,7 +23,7 @@ void Postgrad::personal_detail_prompt()
     std::cout << "Enter Your Last Name: ";
     cin >> last_name;
     this->setlastname(last_name);
-    while(is_valid_GPA)
+    while(is_valid_GPA)                                     //gpa has to be of the correct type before accepted otherwise it loops
     {
         std::string::size_type sz;
         cout << "Enter Your Valid Undergraduate GPA Score: ";
@@ -44,7 +44,7 @@ void Postgrad::personal_detail_prompt()
     }
 }
 
-bool Postgrad::sufficient_marks()
+bool Postgrad::sufficient_marks()              //enrollment is only allowed if gpa is above a certain threshold
 {
     bool is_sufficient = true;
     if (marks < marks_postgrad_vector[facultynum-1])
