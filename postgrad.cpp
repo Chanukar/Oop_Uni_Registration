@@ -3,7 +3,7 @@
 Postgrad::Postgrad() :
     //default contructor to create the object
     User(),
-    //default constructor with faculties as well as the grades required for the degrees are hardcoded
+    //default constructor with degrees as well as the grades required for the degrees are hardcoded
     science_postgrad({"Master of Engineering", "Master of Computer Science", "Master of Science", "Master of Architecture"}),
     arts_postgrad({"Master of Sociology", "Master of music", "Master of Media", "Master of Arts"}),
     law_postgrad({"Master of Law", "Master of Criminology", "Master of International Relations", "Master of Litigation"}),
