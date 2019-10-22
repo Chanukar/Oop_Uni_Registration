@@ -16,9 +16,10 @@ void Undergrad::personal_detail_prompt()
 {
     //function that initializes variables and assigns the personal details that are input to them
     string first_name, last_name;
-    double ATAR_score;
+    string tempscore;
+    int ATAR_score;
+    std::string::size_type sz;
     bool is_valid_ATAR = true;
-	
     std::cout << "Enter Your First Name: ";
     cin >> first_name;
     firstname = first_name;
@@ -28,9 +29,18 @@ void Undergrad::personal_detail_prompt()
     while(is_valid_ATAR)
     {
         cout << "Enter Your Valid ATAR Score: ";
-        cin >> ATAR_score;
+        cin >> tempscore;
+        for(int j=0; j<tempscore.size(); j++)
+        {
+            if( !(tempscore[j] >= '0' && tempscore[j] <= '9')){
+                tempscore = "0";
+                break;
+            }
+        }
+        ATAR_score = stoi(tempscore, &sz);
+        cout << "SCORE AFTer coNVERT is = "<< ATAR_score <<endl;
         marks = ATAR_score;
-        if (ATAR_score<0 || ATAR_score>100) {continue;}
+        if (ATAR_score<=0 || ATAR_score>=100) {continue;}
         else {is_valid_ATAR = false;}
     }
 }
@@ -38,10 +48,11 @@ void Undergrad::personal_detail_prompt()
 void Undergrad::degree_prompt()
 {
     //function that asks which degree is to be chosen and rejects the inputs which don't match the options
-    int input;
+    string input;
     int i;
     bool is_input = true;
-
+    int inputnum;
+    std::string::size_type sz;
 	while (is_input)
     {
         for (i=0; i<degrees_undergrad[facultynum-1].size(); i++)
@@ -51,7 +62,17 @@ void Undergrad::degree_prompt()
         }
         std::cout << "\nSelect The Degree Program That You Want To Enrol In: ";
         cin >> input;
-        if (input < 1 || input > i)
+
+        for(int j=0; j<(input.length()-1); j++)
+        {
+            if(input.substr(j,j+1) != "1" || input.substr(j,j+1) != "2" || input.substr(j,j+1) != "3" || input.substr(j,j+1) != "4" || input.substr(j,j+1) != "5" || input.substr(j,j+1) != "6" || input.substr(j,j+1) != "7" || input.substr(j,j+1) != "8" ||  input.substr(j,j+1) != "9")
+            {
+                input = "0";
+            }
+        }
+        inputnum = stoi(input, &sz);
+
+        if (inputnum < 1 || inputnum > i)
         {
             continue;
         }
@@ -60,7 +81,7 @@ void Undergrad::degree_prompt()
             is_input = false;
         }
     }
-    degreechoise = degrees_undergrad[facultynum-1][input-1];
+    degreechoise = degrees_undergrad[facultynum-1][inputnum-1];
 
 }
 
