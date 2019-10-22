@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "postgrad.h"
+#include "postgrad.h"					//postgrad is inherited
 #include <unistd.h>
 #include <cstdlib>
 #include <string>
@@ -11,19 +11,19 @@ string check_crazy(string);
 
 int main()
 {
-    vector<Undergrad> *undergrad_register = new vector<Undergrad>;		//vector in which we store the students
-    vector<Postgrad> *postgrad_register = new vector<Postgrad>;
+    vector<Undergrad> *undergrad_register = new vector<Undergrad>;	//vectors in which we store the students who are registering
+    vector<Postgrad> *postgrad_register = new vector<Postgrad>;		//vectors in which we store the students who are registering
 	int option_size = 4;
-    string option[4] = {"Undergraduate Registration", "Postgraduate Registration", "Admin", "Quit"};
-    bool sufficient_marks = true;
-    bool is_registration_active = true;
-    int input_number;
+    string option[4] = {"Undergraduate Registration", "Postgraduate Registration", "Admin", "Quit"};	//the four options
+    bool sufficient_marks = true;			//if the marks are above threshold returns true
+    bool is_registration_active = true;			//only stores students when registration is true
+    int input_number;					//input is assigned to this
 
-    while(is_registration_active)
+    while(is_registration_active)	
     {
         std::cout << "\nWelcome to The University Registration and Login System" << endl;
-        input_number = prompt(option, option_size);
-        if (input_number == 1)
+        input_number = prompt(option, option_size);		//when input is entered it's passed to the prompt function
+        if (input_number == 1)					//undergrad functions are called when input is 1 
         {
             undergrad_register->push_back(Undergrad());
             system("clear");
@@ -36,13 +36,13 @@ int main()
             sufficient_marks = undergrad_register->back().sufficient_marks();
             usleep(3000000);
             system("clear");
-            if(!sufficient_marks)
+            if(!sufficient_marks)		//marks have to be sufficient to enroll
             {
                 undergrad_register->pop_back();
             }
 
         }
-        else if(input_number ==2)
+        else if(input_number ==2)			//postgrad functions are called when input is 2
         {
             postgrad_register->push_back(Postgrad());
             system("clear");
@@ -55,13 +55,13 @@ int main()
             sufficient_marks = postgrad_register->back().sufficient_marks();
             usleep(3000000);
             system("clear");
-            if(!sufficient_marks)
+            if(!sufficient_marks)		//marks have to be sufficient to enroll
             {
                 postgrad_register->pop_back();
             }
 
         }
-	else if(input_number == 3)
+	else if(input_number == 3)		//admin registration is activated are called when input is 3
         {
             string username;
             string password;
@@ -70,7 +70,7 @@ int main()
             int admin_option_size = 2;
             string admin_options[2] = {"Undergraduates Details", "Postgraduate Details"};
             cout << "Admin Login" << endl;
-            while(!is_authenticated)
+            while(!is_authenticated)		//admin password and username is asked for and it loops till they are entered correctly
             {
                 cout << "\nEnter UserName: ";
                 cin >> username;
@@ -79,8 +79,8 @@ int main()
                 if(username == "admin" && password == "admin") {is_authenticated = true; }
                 else {continue; }
             }
-            cout << "\nLogin Successful!" << endl;
-
+            cout << "\nLogin Successful!" << endl;		//if admin login is successful then student enrollments are approved
+								//for both undergrads and post grads
             admin_input = prompt(admin_options, admin_option_size);
             if(admin_input == 1)
             {
@@ -97,18 +97,18 @@ int main()
                 }
             }
         }
-        else if(input_number == 4)
+        else if(input_number == 4)		//input 4 quits the program
         {
             std::cout << "The Program Has Been Successfully Terminated" << endl;
             is_registration_active = false;
         }
     }
-	delete undergrad_register;
-    delete postgrad_register;
+	delete undergrad_register;		
+    delete postgrad_register;			//vectors containing both undergrad and post grad are cleared in the end
     return 0;
 }
 
-int prompt(string array[], int& size)
+int prompt(string array[], int& size)		//this is the function that checks if input is of the correct type and magnitude
 {
     string input;
     int i;
@@ -139,7 +139,7 @@ int prompt(string array[], int& size)
     return input1;
 }
 
-string check_crazy(string a)
+string check_crazy(string a)		//checks if string is correct length or not
 {
 	string go;
 	int length = a.length();
