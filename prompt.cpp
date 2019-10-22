@@ -4,9 +4,12 @@ using namespace std;
 
 int prompt(vector<string>& vec)
 {
-    int input;
+    string input;
     int i;
     bool is_input = true;
+    int inputnum;
+    std::string::size_type sz;
+
 
 	while (is_input)
     {
@@ -17,7 +20,15 @@ int prompt(vector<string>& vec)
         }
         std::cout << "\nSelect One of The Following Option: ";
         cin >> input;
-        if (input < 1 || input > i)
+        for(int j=0; j<(input.length()-1); j++)
+        {
+            if(input.substr(j,j+1) != "1" || input.substr(j,j+1) != "2" || input.substr(j,j+1) != "3" || input.substr(j,j+1) != "4" || input.substr(j,j+1) != "5" || input.substr(j,j+1) != "6" || input.substr(j,j+1) != "7" || input.substr(j,j+1) != "8" ||  input.substr(j,j+1) != "9")
+            {
+                input = "0";
+            }
+        }
+        inputnum = stoi(input, &sz);
+        if (inputnum < 1 || inputnum > i)
         {
             continue;
         }
@@ -26,5 +37,5 @@ int prompt(vector<string>& vec)
             is_input = false;
         }
     }
-    return input;
+    return inputnum;
 }

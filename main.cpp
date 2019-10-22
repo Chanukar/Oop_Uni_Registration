@@ -45,13 +45,12 @@ int main()
         }
         else if(input_number == 4)
         {
-            
             std::cout << "The Program Has Been Successfully Terminated" << endl;
             is_registration_active = false;
         }
     }
     delete undergrad_register;
     delete postgrad_register;
-    return 0; 
+    return 0;
 }
 

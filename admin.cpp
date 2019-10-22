@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "undergrad.h"
-#include "Postgrad.h"
+#include "postgrad.h"
 using namespace std;
 
 extern int prompt(vector<string>&);
