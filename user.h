@@ -4,12 +4,12 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
+//included libraries for our code
 class User{
     private:
 
     protected:
-
+        //attributes which can be inherited by a class
         string firstname;
         string lastname;
         double marks;    
@@ -20,6 +20,7 @@ class User{
         int degreenum;
 
     public:
+        //attributes which can be accessed from any class
         User();
         virtual void personal_detail_prompt() = 0;
         void facultyprompt();
