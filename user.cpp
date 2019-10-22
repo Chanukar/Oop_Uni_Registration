@@ -4,11 +4,11 @@
 
 using namespace std;
 
-string check_crazy1(string);
+string check_crazy1(string);		//a string is initialized
 
-User::User():
-    firstname("Default Initialised"),
-    lastname("Default Initialised"),
+User::User():	//default constructor with firstname, lastname, faculties as well as the grades required for the degrees are hardcoded
+    firstname("Default Initialised"),	
+    lastname("Default Initialised"),	
     faculties_vector({"Faculty of Science", "Faculty of Arts", "Law School", "Faculty of the Professions", "Medical School"}),
     marks_undergrad_vector({94.0, 50.0, 85.0, 70.0, 96.0}),
     marks_postgrad_vector({6.0, 4.4, 5.5, 5.0, 6.5}),
@@ -30,7 +30,7 @@ User::User():
     degreenum(0)
     {}
 
-void User::facultyprompt()
+void User::facultyprompt()	//function with a loop and bool which asks which faculty is to be chosen
 {
     string input;
     int i;
@@ -63,7 +63,7 @@ void User::facultyprompt()
     facultynum = input1;
 }
 
-void User::undergradprompt()
+void User::undergradprompt()		//function with a loop and bool which asks which bachelors degree is to be chosen
 {
     string input;
     double input1;
@@ -94,7 +94,7 @@ void User::undergradprompt()
     degreechoise = undergrad_degrees[facultynum-1][input1-1];
 
 }
-void User::postgradprompt()
+void User::postgradprompt()		//function with a loop and bool which asks which masters is to be chosen
 {
     std::string::size_type sz;
     string input;
@@ -126,38 +126,38 @@ void User::postgradprompt()
 
 }
 
-void User::setfirstname(string& name)
+void User::setfirstname(string& name)		//changes the firstname
 {
     firstname = name;
 }
 
-void User::setlastname(string& name)
+void User::setlastname(string& name)		//changes the lastname
 {
     lastname = name;
 }
 
-string User::getfirstname()
+string User::getfirstname()		//returns the firstname
 {
     return firstname;
 }
 
 
-string User::getlastname()
+string User::getlastname()		//returns the lastname
 {
     return lastname;
 }
 
-string User::getfaculty()
+string User::getfaculty()		//returns the faculty
 {
     return facultychoise;
 }
 
-string User::getdegree()
+string User::getdegree()		//returns the degree that was chosen
 {
     return degreechoise;
 }
 
-string check_crazy1(string a)
+string check_crazy1(string a)		//function to check if input is of the correct format
 {
 	string go;
 	int length = a.length();
