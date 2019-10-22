@@ -2,7 +2,8 @@
 #include <vector>
 #include <stdlib.h>
 using namespace std;
-
+//this function clears the screen and also makes sure that the input that has been entered is correct
+//aspects of this function have been saved in the other .cpp files
 int prompt(vector<string>& vec)
 {
     string input;
