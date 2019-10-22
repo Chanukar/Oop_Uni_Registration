@@ -14,6 +14,7 @@ Undergrad::Undergrad() :
 
 void Undergrad::personal_detail_prompt()
 {
+    //function that initializes variables and assigns the personal details that are input to them
     string first_name, last_name;
     double ATAR_score;
     bool is_valid_ATAR = true;
@@ -36,6 +37,7 @@ void Undergrad::personal_detail_prompt()
 
 void Undergrad::degree_prompt()
 {
+    //function that asks which degree is to be chosen and rejects the inputs which don't match the options
     int input;
     int i;
     bool is_input = true;
@@ -64,6 +66,7 @@ void Undergrad::degree_prompt()
 
 bool Undergrad::sufficient_marks()
 {
+    //function that rejects marks below threshold
     bool is_sufficient = true;
     if (marks < marks_undergrad[facultynum-1])
     {
