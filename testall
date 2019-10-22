@@ -41,11 +41,19 @@ then
 fi
     echo "${DIFF}"
 
-echo Test 05: Random strings as input for all fields taking an int for 4 times before a valid input.
+echo Test 05: Random strings as input for all fields taking an int for 4 times before a invalid input and then a valid input.
 DIFF=$(./out < testcases/input05.txt | diff - testcases/output05.txt)
 if [ "$DIFF" == "" ]
 then
     echo Test 05 Passed
+fi
+    echo "${DIFF}"
+
+echo Test 06: One high ATAR, One low, One high GPA, one low, admin login check.
+DIFF=$(./out < testcases/input06.txt | diff - testcases/output06.txt)
+if [ "$DIFF" == "" ]
+then
+    echo Test 06 Passed
 fi
     echo "${DIFF}"
 

@@ -51,6 +51,7 @@ set:
 	./out < testcases/input03.txt > testcases/output03.txt
 	./out < testcases/input04.txt > testcases/output04.txt
 	./out < testcases/input05.txt > testcases/output05.txt
+	./out < testcases/input06.txt > testcases/output06.txt
 	g++ -std=c++11 prompt.cpp test_prompt.cpp -o prompt
 	./prompt < testcases/unit_input01.txt > testcases/unit_output01.txt
 	echo All set!
