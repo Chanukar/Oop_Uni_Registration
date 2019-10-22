@@ -12,7 +12,7 @@ class User{
         //attributes which can be inherited by a class
         string firstname;
         string lastname;
-        double marks;    
+        double marks;
         vector<string> faculties_vector;
         string facultychoise;
         string degreechoise;
