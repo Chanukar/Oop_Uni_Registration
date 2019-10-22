@@ -32,8 +32,8 @@ test: $(objects)
 	bash testall
 	rm -rf out
 	rm *.o
-	g++ -std=c++11 prompt.cpp prompt_test.cpp -o prompt
-	
+	g++ -std=c++11 prompt.cpp test_prompt.cpp -o prompt
+
 
 code:
 	g++ -std=c++11 -o out user.cpp undergrad.cpp postgrad.cpp prompt.cpp register_user.cpp admin.cpp main.cpp
