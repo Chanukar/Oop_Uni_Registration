@@ -1,4 +1,4 @@
-objects = user.o undergrad.o postgrad.o main.o
+objects = user.o undergrad.o postgrad.o prompt.o register_user.o admin.o main.o
 registration: $(objects)
 	g++ -std=c++11 -o registration $(objects)
 	clear
@@ -12,6 +12,15 @@ undergrad.o: undergrad.cpp
 	g++ -std=c++11 -c $< -o $@
 
 postgrad.o: postgrad.cpp
+	g++ -std=c++11 -c $< -o $@
+
+prompt.o: prompt.cpp
+	g++ -std=c++11 -c $< -o $@
+
+register_user.o: register_user.cpp
+	g++ -std=c++11 -c $< -o $@
+
+admin.o: admin.cpp
 	g++ -std=c++11 -c $< -o $@
 
 main.o: main.cpp
