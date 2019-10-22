@@ -1,6 +1,7 @@
 #include "user.h"
 
 User::User() :
+    //faculties are hardcoded in a vector in this default constructor
     firstname("None"),
     lastname("None"),
     marks(0.0),
@@ -14,6 +15,7 @@ User::User() :
 
 void User::facultyprompt()
 {
+    //function with a loop and bool which asks which faculty is to be chosen
     int input;
     int i;
     bool is_input = true;
@@ -40,7 +42,7 @@ void User::facultyprompt()
     facultynum = input;
 }
 
-
+//functions below either change the values of the variables or return them
 string User::getfirstname()
 {
     return firstname;
