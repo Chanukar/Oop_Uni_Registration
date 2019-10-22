@@ -2,6 +2,8 @@
 #include <vector>
 #include "postgrad.h"
 #include "undergrad.h"
+#include <stdlib.h>
+#include <unistd.h>
 using namespace std;
 
 extern int prompt(vector<string>&);
@@ -15,7 +17,6 @@ int main()
     vector<string>menu_options = {"Undergraduate Registration", "Postgraduate Registration", "Admin", "Quit"};
     vector<Undergrad> *undergrad_register = new vector<Undergrad>;
     vector<Postgrad> *postgrad_register = new vector<Postgrad>;
-    
     while(is_registration_active)
     {
         std::cout << "\nWelcome to The University Registration and Login System" << endl;

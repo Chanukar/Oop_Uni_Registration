@@ -1,4 +1,6 @@
 #include "postgrad.h"
+#include <stdlib.h>
+#include <unistd.h>
 
 Postgrad::Postgrad() :
     //default contructor to create the object
@@ -18,6 +20,8 @@ void Postgrad::personal_detail_prompt()
     //function to input details if they have the correct type
     string first_name, last_name;
     double GPA_score;
+    string tempscore;
+    std::string::size_type sz;
     bool is_valid_GPA = true;
     //firstname and lastname have to be entered
     std::cout << "Enter Your First Name: ";
@@ -31,8 +35,17 @@ void Postgrad::personal_detail_prompt()
 	//gpa has to be of the correct type before accepted otherwise it loops
         cout << "Enter Your Valid Undergraduate GPA Score: ";
         cin >> GPA_score;
+        system("clear");
+        for(int j=0; j<tempscore.size(); j++)
+        {
+            if( !(tempscore[j] >= '0' && tempscore[j] <= '9')){
+                tempscore = "0";
+                break;
+            }
+        }
+        GPA_score = stod(tempscore, &sz);
         marks = GPA_score;
-        if (GPA_score<0 || GPA_score>7) {continue;}
+        if (GPA_score<=0 || GPA_score>7) {continue;}
         else {is_valid_GPA = false;}
     }
 }
@@ -40,10 +53,11 @@ void Postgrad::personal_detail_prompt()
 void Postgrad::degree_prompt()
 {
     //function which asks postgrad degree is to be enrolled in and loops till a correct option is chosen
-    int input;
+    string input;
     int i;
     bool is_input = true;
-
+    int inputnum;
+    std::string::size_type sz;
 	while (is_input)
     {
         for (i=0; i<degrees_postgrad[facultynum-1].size(); i++)
@@ -53,7 +67,15 @@ void Postgrad::degree_prompt()
         }
         std::cout << "\nSelect The Degree Program That You Want To Enrol In: ";
         cin >> input;
-        if (input < 1 || input > i)
+        for(int j=0; j<(input.length()-1); j++)
+        {
+            if(input.substr(j,j+1) != "1" || input.substr(j,j+1) != "2" || input.substr(j,j+1) != "3" || input.substr(j,j+1) != "4" || input.substr(j,j+1) != "5" || input.substr(j,j+1) != "6" || input.substr(j,j+1) != "7" || input.substr(j,j+1) != "8" ||  input.substr(j,j+1) != "9")
+            {
+                input = "0";
+            }
+        }
+        inputnum = stoi(input, &sz);
+        if (inputnum < 1 || inputnum > i)
         {
             continue;
         }
@@ -62,7 +84,7 @@ void Postgrad::degree_prompt()
             is_input = false;
         }
     }
-    degreechoise = degrees_postgrad[facultynum-1][input-1];
+    degreechoise = degrees_postgrad[facultynum-1][inputnum-1];
 
 }
 

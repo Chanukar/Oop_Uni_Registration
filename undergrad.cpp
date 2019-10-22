@@ -1,4 +1,6 @@
 #include "undergrad.h"
+#include <stdlib.h>
+#include <unistd.h>
 
 Undergrad::Undergrad() :
     User(),
@@ -30,6 +32,7 @@ void Undergrad::personal_detail_prompt()
     {
         cout << "Enter Your Valid ATAR Score: ";
         cin >> tempscore;
+        system("clear");
         for(int j=0; j<tempscore.size(); j++)
         {
             if( !(tempscore[j] >= '0' && tempscore[j] <= '9')){
@@ -38,9 +41,8 @@ void Undergrad::personal_detail_prompt()
             }
         }
         ATAR_score = stoi(tempscore, &sz);
-        cout << "SCORE AFTer coNVERT is = "<< ATAR_score <<endl;
         marks = ATAR_score;
-        if (ATAR_score<=0 || ATAR_score>=100) {continue;}
+        if (ATAR_score<=0 || ATAR_score>100) {continue;}
         else {is_valid_ATAR = false;}
     }
 }
@@ -62,7 +64,6 @@ void Undergrad::degree_prompt()
         }
         std::cout << "\nSelect The Degree Program That You Want To Enrol In: ";
         cin >> input;
-
         for(int j=0; j<(input.length()-1); j++)
         {
             if(input.substr(j,j+1) != "1" || input.substr(j,j+1) != "2" || input.substr(j,j+1) != "3" || input.substr(j,j+1) != "4" || input.substr(j,j+1) != "5" || input.substr(j,j+1) != "6" || input.substr(j,j+1) != "7" || input.substr(j,j+1) != "8" ||  input.substr(j,j+1) != "9")
