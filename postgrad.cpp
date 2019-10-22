@@ -97,11 +97,15 @@ bool Postgrad::sufficient_marks()
     {
         cout << "\nYou Do Not Have Sufficient Marks To Enrol In This Degee Program" << endl;
         cout << "Thank You For Using The Registration Form." << endl;
+        usleep(3000000);
+        system("clear");
         is_sufficient = false;
     }
     else
     {
         cout << "You Are Eligible To Enrol In This Degree. Please Wait For The University Offer" << endl;
+        usleep(3000000);
+        system("clear");
     }
     return is_sufficient;
 }
