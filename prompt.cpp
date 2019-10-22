@@ -10,8 +10,6 @@ int prompt(vector<string>& vec)
     bool is_input = true;
     int inputnum;
     std::string::size_type sz;
-
-
 	while (is_input)
     {
         for (i=0; i<vec.size(); i++)
@@ -21,6 +19,7 @@ int prompt(vector<string>& vec)
         }
         std::cout << "\nSelect One of The Following Option: ";
         cin >> input;
+        system("clear");
         for(int j=0; j<(input.length()-1); j++)
         {
             if(input.substr(j,j+1) != "1" || input.substr(j,j+1) != "2" || input.substr(j,j+1) != "3" || input.substr(j,j+1) != "4" || input.substr(j,j+1) != "5" || input.substr(j,j+1) != "6" || input.substr(j,j+1) != "7" || input.substr(j,j+1) != "8" ||  input.substr(j,j+1) != "9")

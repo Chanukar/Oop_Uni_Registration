@@ -28,6 +28,7 @@ int main()
             if(!Register_user(undergrad_register->back()))
             {
                 undergrad_register->pop_back();
+                system("clear");
             }
 
         }
@@ -37,6 +38,7 @@ int main()
             if(!Register_user(postgrad_register->back()))
             {
                 postgrad_register->pop_back();
+                system("clear");
             }
 
         }
