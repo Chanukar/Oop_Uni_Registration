@@ -19,7 +19,7 @@ void Postgrad::personal_detail_prompt()
 {
     //function to input details if they have the correct type
     string first_name, last_name;
-    double GPA_score;
+    int GPA_score;
     string tempscore;
     std::string::size_type sz;
     bool is_valid_GPA = true;
@@ -34,7 +34,7 @@ void Postgrad::personal_detail_prompt()
     {
 	//gpa has to be of the correct type before accepted otherwise it loops
         cout << "Enter Your Valid Undergraduate GPA Score: ";
-        cin >> GPA_score;
+        cin >> tempscore;
         system("clear");
         for(int j=0; j<tempscore.size(); j++)
         {
@@ -43,7 +43,7 @@ void Postgrad::personal_detail_prompt()
                 break;
             }
         }
-        GPA_score = stod(tempscore, &sz);
+        GPA_score = stoi(tempscore, &sz);
         marks = GPA_score;
         if (GPA_score<=0 || GPA_score>7) {continue;}
         else {is_valid_GPA = false;}
