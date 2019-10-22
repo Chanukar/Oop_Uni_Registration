@@ -54,6 +54,7 @@ set:
 	./out < testcases/input06.txt > testcases/output06.txt
 	g++ -std=c++11 prompt.cpp test_prompt.cpp -o prompt
 	./prompt < testcases/unit_input01.txt > testcases/unit_output01.txt
+	./prompt < testcases/unit_input02.txt > testcases/unit_output02.txt
 	echo All set!
 	rm -rf out
 	rm -rf prompt

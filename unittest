@@ -1,8 +1,22 @@
 echo UNIT TESTING
-echo Unit Test 01 - Prompt function from Prompt.cpp
+echo .
+echo Loading Tests ..
+sleep 2
+echo Loading Tests ....
+echo .
+sleep 2
+echo Unit Test 01 - Prompt function Random inputs.
 DIFF=$(./prompt < testcases/unit_input01.txt | diff - testcases/unit_output01.txt)
 if [ "$DIFF" == "" ]
 then
-    echo Unit Test Passed
+    echo Unit Test 01 Passed
+fi
+    echo "${DIFF}"
+
+echo Unit Test 02 - Prompt function invalid inputs.
+DIFF=$(./prompt < testcases/unit_input02.txt | diff - testcases/unit_output02.txt)
+if [ "$DIFF" == "" ]
+then
+    echo Unit Test 02 Passed
 fi
     echo "${DIFF}"

@@ -55,7 +55,7 @@ int main()
         }
         else if(input_number == 4)
         {
-            //the function is terminated
+            //the program is terminated
             std::cout << "The Program Has Been Successfully Terminated" << endl;
             is_registration_active = false;
         }
