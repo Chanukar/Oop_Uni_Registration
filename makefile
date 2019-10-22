@@ -32,14 +32,16 @@ test: $(objects)
 	bash testall
 	rm -rf out
 	rm *.o
+	g++ -std=c++11 prompt.cpp prompt_test.cpp -o prompt
+	
 
 code:
-	g++ -std=c++11 -o out user.cpp undergrad.cpp postgrad.cpp main.cpp
+	g++ -std=c++11 -o out user.cpp undergrad.cpp postgrad.cpp prompt.cpp register_user.cpp admin.cpp main.cpp
 	./out
 	rm -rf out
 
 set:
-	g++ -std=c++14 -o out user.cpp undergrad.cpp postgrad.cpp main.cpp
+	g++ -std=c++11 -o out user.cpp undergrad.cpp postgrad.cpp prompt.cpp register_user.cpp admin.cpp main.cpp
 	./out < testcases/input01.txt > testcases/output01.txt
 	./out < testcases/input02.txt > testcases/output02.txt
 	./out < testcases/input03.txt > testcases/output03.txt

@@ -6,31 +6,31 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The above Option: [H[2J
+Select One of The Following Option: [H[2J
 1.Undergraduate Registration
 2.Postgraduate Registration
 3.Admin
 4.Quit
 
-Select One of The above Option: [H[2J
+Select One of The Following Option: [H[2J
 1.Undergraduate Registration
 2.Postgraduate Registration
 3.Admin
 4.Quit
 
-Select One of The above Option: [H[2J
+Select One of The Following Option: [H[2J
 1.Undergraduate Registration
 2.Postgraduate Registration
 3.Admin
 4.Quit
 
-Select One of The above Option: [H[2J
+Select One of The Following Option: [H[2J
 1.Undergraduate Registration
 2.Postgraduate Registration
 3.Admin
 4.Quit
 
-Select One of The above Option: [H[2J[H[2JEnter Your First Name: Enter Your Last Name: Enter Your The Valid ATAR Score: Enter Your The Valid ATAR Score: Enter Your The Valid ATAR Score: Enter Your The Valid ATAR Score: Enter Your The Valid ATAR Score: [H[2J
+Select One of The Following Option: [H[2JEnter Your First Name: Enter Your Last Name: Enter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2J
 1.Faculty of Science
 2.Faculty of Arts
 3.Law School
@@ -65,39 +65,37 @@ Select The Faculty That You Want To Enrol In: [H[2J
 4.Faculty of the Professions
 5.Medical School
 
-Select The Faculty That You Want To Enrol In: [H[2J[H[2J
+Select The Faculty That You Want To Enrol In: [H[2J
 1.Bachelor of Law
 2.Bachelor of Criminology
 3.Bachelor of International Relations
 4.Bachelor of Litigation
 
-Select The Undergraduate Degree That You Want To Enrol In: [H[2J
+Select The Degree Program That You Want To Enrol In: [H[2J
 1.Bachelor of Law
 2.Bachelor of Criminology
 3.Bachelor of International Relations
 4.Bachelor of Litigation
 
-Select The Undergraduate Degree That You Want To Enrol In: [H[2J
+Select The Degree Program That You Want To Enrol In: [H[2J
 1.Bachelor of Law
 2.Bachelor of Criminology
 3.Bachelor of International Relations
 4.Bachelor of Litigation
 
-Select The Undergraduate Degree That You Want To Enrol In: [H[2J
+Select The Degree Program That You Want To Enrol In: [H[2J
 1.Bachelor of Law
 2.Bachelor of Criminology
 3.Bachelor of International Relations
 4.Bachelor of Litigation
 
-Select The Undergraduate Degree That You Want To Enrol In: [H[2J
+Select The Degree Program That You Want To Enrol In: [H[2J
 1.Bachelor of Law
 2.Bachelor of Criminology
 3.Bachelor of International Relations
 4.Bachelor of Litigation
 
-Select The Undergraduate Degree That You Want To Enrol In: [H[2J[H[2J
-You Do Not Have Sufficient Marks To Enrol In This Degee Program
-Thank You For Using The Registration Form.
+Select The Degree Program That You Want To Enrol In: [H[2JYou Are Eligible To Enrol In This Degree. Please Wait For The University Offer
 [H[2J
 Welcome to The University Registration and Login System
 
@@ -106,7 +104,7 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The above Option: [H[2J[H[2JEnter Your First Name: Enter Your Last Name: Enter Your Valid Undergraduate GPA Score: [H[2J
+Select One of The Following Option: [H[2JEnter Your First Name: Enter Your Last Name: Enter Your Valid Undergraduate GPA Score: [H[2J
 1.Faculty of Science
 2.Faculty of Arts
 3.Law School
@@ -141,39 +139,37 @@ Select The Faculty That You Want To Enrol In: [H[2J
 4.Faculty of the Professions
 5.Medical School
 
-Select The Faculty That You Want To Enrol In: [H[2J[H[2J
+Select The Faculty That You Want To Enrol In: [H[2J
 1.Master of Finance
 2.Master of Economics
 3.Master of Accounting
 4.Master of Business
 
-Select The Postgraduate Degree That You Want To Enrol In: [H[2J
+Select The Degree Program That You Want To Enrol In: [H[2J
 1.Master of Finance
 2.Master of Economics
 3.Master of Accounting
 4.Master of Business
 
-Select The Postgraduate Degree That You Want To Enrol In: [H[2J
+Select The Degree Program That You Want To Enrol In: [H[2J
 1.Master of Finance
 2.Master of Economics
 3.Master of Accounting
 4.Master of Business
 
-Select The Postgraduate Degree That You Want To Enrol In: [H[2J
+Select The Degree Program That You Want To Enrol In: [H[2J
 1.Master of Finance
 2.Master of Economics
 3.Master of Accounting
 4.Master of Business
 
-Select The Postgraduate Degree That You Want To Enrol In: [H[2J
+Select The Degree Program That You Want To Enrol In: [H[2J
 1.Master of Finance
 2.Master of Economics
 3.Master of Accounting
 4.Master of Business
 
-Select The Postgraduate Degree That You Want To Enrol In: [H[2J[H[2J
-You Do Not Have Sufficient Marks To Enrol In This Degee Program.
-Thank You For Using The Registration Form.
+Select The Degree Program That You Want To Enrol In: [H[2JYou Are Eligible To Enrol In This Degree. Please Wait For The University Offer
 [H[2J
 Welcome to The University Registration and Login System
 
@@ -182,7 +178,7 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The above Option: [H[2JAdmin Login
+Select One of The Following Option: [H[2JAdmin Login
 
 Enter UserName: Password: 
 Login Successful!
@@ -190,7 +186,8 @@ Login Successful!
 1.Undergraduates Details
 2.Postgraduate Details
 
-Select One of The above Option: [H[2J
+Select One of The Following Option: [H[2JBharath		Nair	99	Law School	Bachelor of Criminology
+
 Welcome to The University Registration and Login System
 
 1.Undergraduate Registration
@@ -198,4 +195,4 @@ Welcome to The University Registration and Login System
 3.Admin
 4.Quit
 
-Select One of The above Option: [H[2JThe Program Has Been Successfully Terminated
+Select One of The Following Option: [H[2JThe Program Has Been Successfully Terminated

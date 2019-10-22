@@ -1,0 +1,9 @@
+echo UNIT TESTING
+
+echo Unit test 01 - Prompt function from Prompt.cpp
+DIFF=$(./out < testcases/unit_input01.txt | diff - testcases/unit_output01.txt)
+if [ "$DIFF" == "" ]
+then
+    echo Unit Test 01 Passed
+fi
+    echo "${DIFF}"

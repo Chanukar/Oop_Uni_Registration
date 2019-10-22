@@ -7,7 +7,7 @@ sleep 1
 
 echo Test 01: Student with good score applying for UG Bachlors of Computer Science
 DIFF=$(./out < testcases/input01.txt | diff - testcases/output01.txt) 
-if [ "$DIFF" == "" ] 
+if [ "$DIFF" == "" ]
 then
     echo Test 01 Passed
 fi
@@ -16,8 +16,8 @@ fi
 
 
 echo Test 02: Student with bad score applying for PG in Medicine.
-DIFF=$(./out < testcases/input02.txt | diff - testcases/output02.txt) 
-if [ "$DIFF" == "" ] 
+DIFF=$(./out < testcases/input02.txt | diff - testcases/output02.txt)
+if [ "$DIFF" == "" ]
 then
     echo Test 02 Passed
 fi
@@ -25,8 +25,8 @@ fi
 
 
 echo Test 03: Admin login when 2 students applied, 1 eligible applied
-DIFF=$(./out < testcases/input03.txt | diff - testcases/output03.txt) 
-if [ "$DIFF" == "" ] 
+DIFF=$(./out < testcases/input03.txt | diff - testcases/output03.txt)
+if [ "$DIFF" == "" ]
 then
     echo Test 03 Passed
 fi
@@ -34,16 +34,16 @@ fi
 
 
 echo Test 04: Admin login when 2 eligible PG, and 1 eligible UG applied
-DIFF=$(./out < testcases/input04.txt | diff - testcases/output04.txt) 
-if [ "$DIFF" == "" ] 
+DIFF=$(./out < testcases/input04.txt | diff - testcases/output04.txt)
+if [ "$DIFF" == "" ]
 then
     echo Test 04 Passed
 fi
     echo "${DIFF}"
 
 echo Test 05: Random strings as input for all fields taking an int for 4 times before a valid input.
-DIFF=$(./out < testcases/input05.txt | diff - testcases/output05.txt) 
-if [ "$DIFF" == "" ] 
+DIFF=$(./out < testcases/input05.txt | diff - testcases/output05.txt)
+if [ "$DIFF" == "" ]
 then
     echo Test 05 Passed
 fi
