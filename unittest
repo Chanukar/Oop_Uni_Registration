@@ -20,3 +20,53 @@ then
     echo Unit Test 02 Passed
 fi
     echo "${DIFF}"
+
+echo Unit Test 03 - Register user function - Vigorous Random and invalid inputs UG.
+DIFF=$(./register < testcases/unit_input03.txt | diff - testcases/unit_output03.txt)
+if [ "$DIFF" == "" ]
+then
+    echo Unit Test 03 Passed
+fi
+    echo "${DIFF}"
+
+echo Unit Test 04 - Register user function - Vigorous Random and invalid inputs inputs PG.
+DIFF=$(./register < testcases/unit_input04.txt | diff - testcases/unit_output04.txt)
+if [ "$DIFF" == "" ]
+then
+    echo Unit Test 04 Passed
+fi
+    echo "${DIFF}"
+
+echo Unit Test 05 - Register user function - Applicable UG application.
+DIFF=$(./register < testcases/unit_input05.txt | diff - testcases/unit_output05.txt)
+if [ "$DIFF" == "" ]
+then
+    echo Unit Test 05 Passed
+fi
+    echo "${DIFF}"
+
+echo Unit Test 06 - Register user function - Applicable PG application.
+DIFF=$(./register < testcases/unit_input06.txt | diff - testcases/unit_output06.txt)
+if [ "$DIFF" == "" ]
+then
+    echo Unit Test 06 Passed
+fi
+    echo "${DIFF}"
+
+echo Unit Test 07 - Register user function - Not Applicable UG application.
+DIFF=$(./register < testcases/unit_input07.txt | diff - testcases/unit_output07.txt)
+if [ "$DIFF" == "" ]
+then
+    echo Unit Test 07 Passed
+fi
+    echo "${DIFF}"
+
+echo Unit Test 08 - Register user function - Not Applicable PG application.
+DIFF=$(./register < testcases/unit_input08.txt | diff - testcases/unit_output08.txt)
+if [ "$DIFF" == "" ]
+then
+    echo Unit Test 08 Passed
+fi
+    echo "${DIFF}"
+
+echo UNIT TESTING COMPLETE

@@ -34,9 +34,11 @@ test: $(objects)
 	rm *.o
 	clear
 	g++ -std=c++11 prompt.cpp test_prompt.cpp -o prompt
+	g++ -std=c++11 test_register_user.cpp register_user.cpp user.cpp undergrad.cpp postgrad.cpp -o register
 	clear
 	bash unittest
 	rm -rf prompt
+	rm -rf register
 
 
 code:
