@@ -57,9 +57,17 @@ set:
 	g++ -std=c++11 prompt.cpp test_prompt.cpp -o prompt
 	./prompt < testcases/unit_input01.txt > testcases/unit_output01.txt
 	./prompt < testcases/unit_input02.txt > testcases/unit_output02.txt
+	g++ -std=c++11 test_register_user.cpp register_user.cpp user.cpp undergrad.cpp postgrad.cpp -o register
+	./register < testcases/unit_input03.txt > testcases/unit_output03.txt
+	./register < testcases/unit_input04.txt > testcases/unit_output04.txt
+	./register < testcases/unit_input05.txt > testcases/unit_output05.txt
+	./register < testcases/unit_input06.txt > testcases/unit_output06.txt
+	./register < testcases/unit_input07.txt > testcases/unit_output07.txt
+	./register < testcases/unit_input08.txt > testcases/unit_output08.txt
 	echo All set!
 	rm -rf out
 	rm -rf prompt
+	rm -rf register
 	clear
 
 clean:

@@ -1,0 +1,147 @@
+1.UG
+2.PG
+Enter Your First Name: Enter Your Last Name: Enter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2JEnter Your Valid ATAR Score: [H[2J
+1.Faculty of Science
+2.Faculty of Arts
+3.Law School
+4.Faculty of the Professions
+5.Medical School
+
+Select The Faculty That You Want To Enrol In: [H[2J
+1.Faculty of Science
+2.Faculty of Arts
+3.Law School
+4.Faculty of the Professions
+5.Medical School
+
+Select The Faculty That You Want To Enrol In: [H[2J
+1.Faculty of Science
+2.Faculty of Arts
+3.Law School
+4.Faculty of the Professions
+5.Medical School
+
+Select The Faculty That You Want To Enrol In: [H[2J
+1.Faculty of Science
+2.Faculty of Arts
+3.Law School
+4.Faculty of the Professions
+5.Medical School
+
+Select The Faculty That You Want To Enrol In: [H[2J
+1.Faculty of Science
+2.Faculty of Arts
+3.Law School
+4.Faculty of the Professions
+5.Medical School
+
+Select The Faculty That You Want To Enrol In: [H[2J
+1.Faculty of Science
+2.Faculty of Arts
+3.Law School
+4.Faculty of the Professions
+5.Medical School
+
+Select The Faculty That You Want To Enrol In: [H[2J
+1.Faculty of Science
+2.Faculty of Arts
+3.Law School
+4.Faculty of the Professions
+5.Medical School
+
+Select The Faculty That You Want To Enrol In: [H[2J
+1.Faculty of Science
+2.Faculty of Arts
+3.Law School
+4.Faculty of the Professions
+5.Medical School
+
+Select The Faculty That You Want To Enrol In: [H[2J
+1.Faculty of Science
+2.Faculty of Arts
+3.Law School
+4.Faculty of the Professions
+5.Medical School
+
+Select The Faculty That You Want To Enrol In: [H[2J
+1.Faculty of Science
+2.Faculty of Arts
+3.Law School
+4.Faculty of the Professions
+5.Medical School
+
+Select The Faculty That You Want To Enrol In: [H[2J
+1.Faculty of Science
+2.Faculty of Arts
+3.Law School
+4.Faculty of the Professions
+5.Medical School
+
+Select The Faculty That You Want To Enrol In: [H[2J
+1.Bachelor of Sociology
+2.Bachelor of music
+3.Bachelor of Media
+4.Bachelor of Arts
+
+Select The Degree Program That You Want To Enrol In: [H[2J
+1.Bachelor of Sociology
+2.Bachelor of music
+3.Bachelor of Media
+4.Bachelor of Arts
+
+Select The Degree Program That You Want To Enrol In: [H[2J
+1.Bachelor of Sociology
+2.Bachelor of music
+3.Bachelor of Media
+4.Bachelor of Arts
+
+Select The Degree Program That You Want To Enrol In: [H[2J
+1.Bachelor of Sociology
+2.Bachelor of music
+3.Bachelor of Media
+4.Bachelor of Arts
+
+Select The Degree Program That You Want To Enrol In: [H[2J
+1.Bachelor of Sociology
+2.Bachelor of music
+3.Bachelor of Media
+4.Bachelor of Arts
+
+Select The Degree Program That You Want To Enrol In: [H[2J
+1.Bachelor of Sociology
+2.Bachelor of music
+3.Bachelor of Media
+4.Bachelor of Arts
+
+Select The Degree Program That You Want To Enrol In: [H[2J
+1.Bachelor of Sociology
+2.Bachelor of music
+3.Bachelor of Media
+4.Bachelor of Arts
+
+Select The Degree Program That You Want To Enrol In: [H[2J
+1.Bachelor of Sociology
+2.Bachelor of music
+3.Bachelor of Media
+4.Bachelor of Arts
+
+Select The Degree Program That You Want To Enrol In: [H[2J
+1.Bachelor of Sociology
+2.Bachelor of music
+3.Bachelor of Media
+4.Bachelor of Arts
+
+Select The Degree Program That You Want To Enrol In: [H[2J
+1.Bachelor of Sociology
+2.Bachelor of music
+3.Bachelor of Media
+4.Bachelor of Arts
+
+Select The Degree Program That You Want To Enrol In: [H[2J
+1.Bachelor of Sociology
+2.Bachelor of music
+3.Bachelor of Media
+4.Bachelor of Arts
+
+Select The Degree Program That You Want To Enrol In: [H[2JYou Are Eligible To Enrol In This Degree. Please Wait For The University Offer
+[H[2J

@@ -57,6 +57,6 @@ then
 fi
     echo "${DIFF}"
 
-sleep 3
+sleep 5
 
 echo TESTS COMPLETE
