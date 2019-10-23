@@ -1,4 +1,4 @@
-# OOP Major Practical 2019 - University of Adelaide
+# OOP Major Practical 2019 - University Enrolment System
 
 ## Steps to install
 ### Make sure you have atleast gcc 4.8 installed in your system.
@@ -12,7 +12,7 @@
 
 # And you are all set!
 
-## Any improvments or contibutions from the open source community is appriciated! Feel free to raise a PR!
+## Any improvments or contibutions from the open source community is appreciated! Feel free to raise a PR!
 
 
 
